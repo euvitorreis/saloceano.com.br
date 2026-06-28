@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAL OCEANO aromas: A Essência do Oceano</title>
+<meta name="description" content="Aromas, lifestyle e experiências que traduzem a elegância natural do litoral brasileiro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:#F8F3EB;color:#1C2A38;overflow-x:hidden}
+:root{
+  --cream:#F8F3EB;
+  --cream2:#F1E9DC;
+  --sand:#E5D9C8;
+  --white:#FFFFFF;
+  --navy:#0D2740;
+  --navy2:#183C5E;
+  --navy3:#071828;
+  --gold:#C0914E;
+  --gold2:#9C7238;
+  --muted:#8C8070;
+  --border:rgba(192,145,78,.15);
+  --r:5px;
+}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.1}
+p{font-size:.83rem;line-height:1.85;color:var(--muted);font-weight:300}
+img{display:block;max-width:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.tag{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.gold-rule{width:28px;height:1.5px;background:var(--gold);display:block;margin:.5rem 0 1rem}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.rv.visible{opacity:1;transform:none}
+.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}.rv-d4{transition-delay:.4s}
+.link-arr{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.3rem;transition:gap .2s}
+.link-arr::after{content:'→'}
+.link-arr:hover{gap:.55rem}
+.btn{display:inline-block;font-family:'Montserrat',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.85rem 2.2rem;cursor:pointer;border:none;transition:all .25s;text-align:center;line-height:1}
+.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy2)}
+.btn-gold{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}.btn-gold:hover{background:var(--gold);color:#fff}
+.btn-w{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}.btn-w:hover{background:rgba(255,255,255,.1)}
+.btns-row{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* ═══ NAV ═══ */
+.nav{position:fixed;top:2px;left:0;right:0;z-index:200;transition:background .4s,box-shadow .4s;background:rgba(7,24,44,.9);backdrop-filter:blur(14px)}
+.nav.solid{background:rgba(7,24,44,.97);box-shadow:0 1px 0 rgba(255,255,255,.07)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1280px;margin:0 auto;padding:0 32px}
+.nav-brand{display:flex;align-items:center;gap:.85rem;cursor:pointer}
+.nav-logo{height:34px;width:auto;filter:brightness(10)}
+.nav-brand-words{line-height:1}
+.nav-brand-name{font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:.12em;color:#fff}
+.nav-sal{color:#fff}.nav-oc{color:#7ec8d3}
+.nav-brand-sub{font-size:.5rem;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.6);margin-top:2px;display:block}
+.nav-links{display:flex;list-style:none;gap:2.2rem}
+.nav-links a{font-size:.64rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;padding-bottom:3px;border-bottom:1.5px solid transparent;transition:color .2s,border-color .2s;color:rgba(255,255,255,.68)}
+.nav-links a:hover,.nav-links a.act{color:var(--gold)!important;border-bottom-color:var(--gold)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:22px;height:1.5px;background:rgba(255,255,255,.85);display:block;transition:.3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-menu{display:none;position:fixed;inset:0;background:#071828;z-index:199;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding-top:66px}
+.mob-menu.open{display:flex}
+.mob-menu a{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(255,255,255,.85);cursor:pointer;transition:color .2s}
+.mob-menu a:hover{color:var(--gold)}
+
+/* ═══ HERO ═══ */
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden}
+.hero-slide{position:absolute;inset:0;opacity:0;background-size:cover;background-position:center;transition:opacity 1.2s ease}
+.hero-slide.active{opacity:1}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(7,24,44,.06) 0%,rgba(7,24,44,.18) 45%,rgba(7,24,44,.62) 100%)}
+.hero-body{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:0 0 5.5rem clamp(2rem,8vw,8rem);text-align:left;z-index:2}
+.hero-badge{background:rgba(192,145,78,.18);border:1px solid rgba(192,145,78,.35);padding:.35rem 1.1rem;margin-bottom:1.5rem;display:inline-block}
+.hero-badge span{font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:opacity .4s}
+.hero h1{font-size:clamp(3rem,7.5vw,5.5rem);color:#fff;font-weight:300;line-height:.93;letter-spacing:-.01em;max-width:none}
+.hero-pre{font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:#7ec8d3;margin-bottom:1rem;opacity:.9;display:block}
+.hero-h1-sub{display:block;font-family:'Montserrat',sans-serif;font-size:clamp(.75rem,1.4vw,1rem);font-weight:400;letter-spacing:.38em;text-transform:uppercase;color:rgba(255,255,255,.68);margin-top:.45rem}
+.hero-sub{color:rgba(255,255,255,.62);max-width:500px;margin:.9rem 0 0;font-size:.85rem;line-height:1.75}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.hero-discover{display:inline-flex;align-items:center;gap:.75rem;font-size:.62rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.82);cursor:pointer;border-left:2px solid var(--gold);padding:.35rem 0 .35rem .9rem;transition:color .2s,padding-left .2s;background:none;border-top:none;border-right:none;border-bottom:none;font-family:'Montserrat',sans-serif}
+.hero-discover:hover{color:#fff;padding-left:1.2rem}
+.hero-dots{display:flex;gap:.5rem;justify-content:flex-start;margin-top:2rem}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;border:none;padding:0;transition:all .3s}
+.hero-dot.act{background:var(--gold);width:20px;border-radius:3px}
+.hero::after{display:none}
+
+/* ═══ BRAND STRIP ═══ */
+.brand-strip{background:var(--white);border-bottom:1px solid var(--border);padding:2rem 0}
+.bs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.bs-item{display:flex;flex-direction:column;align-items:center;gap:.35rem}
+.bs-icon{font-size:1.2rem;opacity:.5}
+.bs-label{font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
+.bs-desc{font-size:.7rem;color:var(--muted);font-weight:300}
+
+/* ═══ MANIFESTO ═══ */
+.manifesto{padding:6rem 0;background:var(--cream)}
+.mf-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.mf-photo{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.mf-photo img{width:100%;height:100%}
+.mf-text .tag{margin-bottom:.4rem;display:block}
+.mf-text h2{font-size:clamp(1.9rem,3vw,3rem);color:var(--navy);margin-bottom:.3rem}
+.mf-text p{margin-bottom:.9rem;max-width:440px}
+.mf-text p:last-of-type{margin-bottom:2rem}
+
+/* ═══ 6 LINHAS ═══ */
+.linhas-header{text-align:center;padding:4rem 32px 2.5rem;background:var(--cream2)}
+.linhas-header .tag{display:block;margin-bottom:.5rem}
+.linhas-header h2{font-size:clamp(1.8rem,2.5vw,2.6rem);color:var(--navy)}
+.linhas-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr)}
+.linha-card{position:relative;overflow:hidden;cursor:pointer;aspect-ratio:4/3}
+.linha-card img{width:100%;height:100%;transition:transform .7s ease}
+.linha-card:hover img{transform:scale(1.06)}
+.linha-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,24,44,.88) 0%,rgba(7,24,44,.08) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.8rem 1.6rem;transition:background .4s}
+.linha-card:hover .linha-ov{background:linear-gradient(to top,rgba(7,24,44,.96) 0%,rgba(7,24,44,.22) 55%,transparent 100%)}
+.linha-ov h3{font-size:1.45rem;color:#fff;margin-bottom:.25rem}
+.linha-ov p{font-size:.71rem;color:rgba(255,255,255,.68);margin-bottom:.8rem;line-height:1.55;max-width:190px}
+.linha-ov .link-arr{color:var(--gold)}
+
+/* ═══ TRANSIÇÕES ═══ */
+.fade-cream-white{height:80px;background:linear-gradient(to bottom,var(--cream2),var(--white));pointer-events:none}
+.fade-white-cream{height:80px;background:linear-gradient(to bottom,var(--white),var(--cream2));pointer-events:none}
+.fade-cream-navy{height:80px;background:linear-gradient(to bottom,var(--cream2),var(--navy3));pointer-events:none}
+
+/* ═══ PRODUTOS ═══ */
+.produtos-sec{padding:5.5rem 0;background:var(--white)}
+.sec-head{text-align:center;margin-bottom:3rem}
+.sec-head .tag{display:block;margin-bottom:.45rem}
+.sec-head h2{font-size:clamp(1.8rem,2.5vw,2.6rem);color:var(--navy);margin-bottom:.5rem}
+.sec-head p{max-width:500px;margin:0 auto;font-size:.84rem}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem}
+.prod-card{display:block;cursor:pointer;text-decoration:none;color:inherit}
+.prod-img{position:relative;border-radius:var(--r);overflow:hidden;background:var(--sand);aspect-ratio:1}
+.prod-img img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s}
+.prod-card:hover .prod-img img{transform:scale(1.06)}
+.prod-badge{position:absolute;top:.6rem;left:.6rem;color:#fff;font-size:.58rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:.22rem .55rem;border-radius:2px}
+.badge-navy{background:var(--navy)}
+.badge-gold{background:var(--gold)}
+.prod-info{padding:.85rem .1rem .1rem}
+.prod-type{font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem}
+.prod-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--navy);margin-bottom:.25rem;line-height:1.2}
+.prod-price{font-size:.75rem;font-weight:500;color:var(--muted)}
+
+/* ═══ JORNADA ═══ */
+.jornada-sec{padding:5rem 0 0;background:var(--cream)}
+.jornada-sec .sec-head{padding:0 32px}
+.jornada-mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:55vh 42vh;gap:2px;margin-top:2.5rem}
+.jm-tile:nth-child(-n+3){grid-column:span 2}
+.jm-tile:nth-child(n+4){grid-column:span 3}
+.jm-tile{position:relative;overflow:hidden;cursor:pointer;display:block}
+.jm-inner{display:flex;position:absolute;top:0;left:0;bottom:0;width:200%;transition:transform .9s cubic-bezier(.4,0,.2,1)}
+.jm-inner.show-product{transform:translateX(-50%)}
+.jm-slide{width:50%;flex-shrink:0;overflow:hidden;position:relative}
+.jm-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+.jm-tile:hover .jm-slide:first-child img{transform:scale(1.05)}
+.jm-prod-slide{position:relative;overflow:hidden}
+.jm-prod-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.jm-prod-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(7,24,44,.78) 0%,transparent 50%);pointer-events:none}
+.jm-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,24,44,.88) 0%,transparent 52%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.3rem 1.1rem}
+.jm-prod-label{position:absolute;bottom:1.3rem;left:1.1rem;z-index:1}
+.jm-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#fff;font-weight:400;line-height:1.2}
+.jm-type{font-size:.6rem;color:rgba(255,255,255,.5);margin-top:.15rem;display:block}
+.jm-prod-label .jm-name{color:#fff}
+.jm-prod-label .jm-type{color:rgba(255,255,255,.6)}
+.jornada-fade{height:80px;background:linear-gradient(to bottom,var(--cream),var(--white));margin-top:-2px}
+
+/* ═══ LIFESTYLE ═══ */
+.lifestyle-sec{padding:5.5rem 0;background:var(--white)}
+.ls-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-bottom:3rem}
+.ls-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .3s,transform .3s;display:block;background:var(--white)}
+.ls-card:hover{box-shadow:0 10px 32px rgba(13,39,64,.08);transform:translateY(-3px)}
+.ls-card-img{aspect-ratio:4/3;overflow:hidden}
+.ls-card-img img{width:100%;height:100%;transition:transform .5s}
+.ls-card:hover .ls-card-img img{transform:scale(1.04)}
+.ls-card-body{padding:1.3rem 1.4rem}
+.ls-card-body .tag{margin-bottom:.3rem;display:block}
+.ls-card-body h3{font-size:1.2rem;color:var(--navy);margin-bottom:.45rem}
+.ls-card-body p{font-size:.77rem;line-height:1.7;margin-bottom:.9rem}
+.gallery-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
+.gs-img{overflow:hidden;aspect-ratio:2/3;border-radius:var(--r)}
+.gs-img img{width:100%;height:100%;transition:transform .55s}
+.gs-img:hover img{transform:scale(1.06)}
+
+/* ═══ FEITO À MÃO ═══ */
+.feito-sec{padding:5.5rem 0;background:var(--cream2);position:relative}
+.feito-sec::before{content:'';position:absolute;top:-60px;left:0;right:0;height:60px;background:linear-gradient(to bottom,var(--white),var(--cream2));pointer-events:none}
+.feito-head{text-align:center;max-width:600px;margin:0 auto 3rem}
+.feito-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);color:var(--navy);font-weight:300;margin-bottom:.4rem;line-height:1.1}
+.feito-head .tag{display:block;margin-bottom:1rem}
+.feito-head p{max-width:480px;margin:0 auto;color:var(--muted)}
+.feito-hero-img{width:100%;overflow:hidden;margin:0 0 3rem;background:var(--cream2)}
+.feito-hero-img img{width:100%;height:auto;max-height:80vh;object-fit:contain;display:block;margin:0 auto}
+.feito-feat{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center;margin-bottom:4rem}
+.ff-img{border-radius:var(--r);overflow:hidden;aspect-ratio:5/4}
+.ff-img img{width:100%;height:100%}
+.ff-text .tag{margin-bottom:.4rem;display:block}
+.ff-text h2{font-size:clamp(1.8rem,2.8vw,2.6rem);color:var(--navy);margin-bottom:.8rem}
+.ff-text p{margin-bottom:.85rem;max-width:430px}
+.ff-text p:last-of-type{margin-bottom:1.8rem}
+.feito-sub-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.feito-sub{background:var(--white);border-radius:var(--r);padding:1.4rem 1.3rem;border:1px solid var(--border)}
+.fs-icon{font-size:1.3rem;margin-bottom:.55rem;opacity:.5}
+.feito-sub h4{font-size:1rem;color:var(--navy);margin-bottom:.35rem}
+.feito-sub p{font-size:.76rem;line-height:1.7}
+
+/* ═══ RESORT ═══ */
+.resort-sec{position:relative;background:var(--navy3)}
+.resort-sec::before{content:'';position:absolute;top:-80px;left:0;right:0;height:80px;background:linear-gradient(to bottom,var(--cream2),var(--navy3));pointer-events:none;z-index:0}
+.resort-hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden}
+.resort-hero-bg{position:absolute;inset:0}
+.resort-hero-bg img{width:100%;height:100%;opacity:.38}
+.resort-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(7,24,44,.93) 0%,rgba(7,24,44,.5) 55%,rgba(7,24,44,.12) 100%)}
+.resort-hero-text{position:relative;z-index:2;padding:0 max(3rem,6%);max-width:600px}
+.resort-hero-text .tag{margin-bottom:.5rem;display:block}
+.resort-hero-text h2{font-size:clamp(2.4rem,5vw,4rem);color:#fff;margin-bottom:1rem}
+.resort-hero-text h2 em{display:block;font-style:italic;color:#d4a96a;font-weight:300}
+.resort-hero-text p{color:rgba(255,255,255,.62);max-width:420px;margin-bottom:2.2rem;font-size:.88rem}
+.rp-formats{background:var(--navy3);padding:5rem 0}
+.rp-formats-head{text-align:center;margin-bottom:3.5rem}
+.rp-formats-head .tag{display:block;margin-bottom:.4rem}
+.rp-formats-head h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);color:#fff;font-weight:400}
+.rp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.rp-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);overflow:hidden}
+.rp-card-img{aspect-ratio:4/3;overflow:hidden}
+.rp-card-img img{width:100%;height:100%;filter:brightness(.68) saturate(.8);transition:filter .4s}
+.rp-card:hover .rp-card-img img{filter:brightness(.82) saturate(.9)}
+.rp-card-body{padding:1.3rem}
+.rp-card-body .tag{margin-bottom:.3rem;display:block}
+.rp-card-body h4{font-size:1.15rem;color:#fff;margin-bottom:.45rem}
+.rp-card-body p{font-size:.77rem;color:rgba(255,255,255,.48);line-height:1.7;margin-bottom:.9rem}
+
+/* ═══ LOJA: badge projeto em desenvolvimento ═══ */
+.rp-dev-badge{display:inline-block;margin-bottom:.55rem;padding:.22rem .65rem;background:rgba(192,145,78,.18);border:1px solid rgba(192,145,78,.3);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+
+/* ═══ SPA MINI-GRID ═══ */
+.spa-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:3px;height:100%}
+.spa-grid img{width:100%;height:100%;filter:brightness(.68) saturate(.8);transition:filter .4s;object-fit:cover}
+.spa-grid:hover img{filter:brightness(.82) saturate(.9)}
+
+/* ═══ LIGHTBOX / SLIDER ═══ */
+.lb-overlay{display:none;position:fixed;inset:0;z-index:900;background:rgba(6,17,28,.95);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1.5rem}
+.lb-overlay.open{display:flex}
+.lb-box{position:relative;width:100%;max-width:960px;background:#0a1e30;border:1px solid rgba(192,145,78,.2);border-radius:var(--r);overflow:hidden}
+.lb-close{position:absolute;top:1rem;right:1rem;z-index:10;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s;line-height:1}
+.lb-close:hover{background:rgba(192,145,78,.5)}
+.lb-header{padding:1.3rem 1.5rem .8rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.lb-header .tag{display:block;margin-bottom:.25rem}
+.lb-header h4{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.4rem;font-weight:400}
+/* slider */
+.lb-slider{position:relative;overflow:hidden}
+.lb-track{display:flex;transition:transform .45s ease}
+.lb-track img{width:100%;flex-shrink:0;aspect-ratio:16/9;object-fit:cover}
+.lb-arrow{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(7,24,44,.7);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:5;transition:background .2s;line-height:1}
+.lb-arrow:hover{background:var(--gold)}
+.lb-prev{left:.8rem}.lb-next{right:.8rem}
+.lb-dots-row{display:flex;justify-content:center;gap:.4rem;padding:.8rem 0}
+.lb-sdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;border:none;transition:all .25s;padding:0}
+.lb-sdot.act{background:var(--gold);width:20px;border-radius:3px}
+/* mini carousel no card */
+.rp-carousel{position:relative;overflow:hidden;height:100%}
+.rp-carousel-track{display:flex;height:100%;transition:transform .5s ease}
+.rp-carousel-track img{width:100%;flex-shrink:0;height:100%;object-fit:cover;filter:brightness(.68) saturate(.8)}
+/* zoom loja */
+.lb-zoom-img{width:100%;max-height:80vh;object-fit:contain;display:block}
+
+/* ═══ PROJETO FUTURO ═══ */
+.projeto-futuro{position:relative;padding:7rem 0;text-align:center;overflow:hidden;background:var(--navy)}
+.pf-bg{position:absolute;inset:0;opacity:.22}
+.pf-bg img{width:100%;height:100%}
+.pf-logo-circle{width:76px;height:76px;border:1px solid rgba(192,145,78,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.8rem}
+.pf-logo-circle img{width:44px;height:auto;filter:brightness(10);opacity:.65}
+.pf-content{position:relative;z-index:1}
+.pf-content .tag{display:block;text-align:center;margin-bottom:.5rem;font-size:.7rem}
+.pf-content h2{font-size:clamp(2.2rem,5vw,3.8rem);color:#fff;margin-bottom:1rem}
+.pf-content h2 em{font-style:italic;color:#d4a96a}
+.pf-content p{color:rgba(255,255,255,.55);max-width:520px;margin:0 auto 2.8rem;font-size:.88rem}
+.pf-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ═══ INVESTIDORES ═══ */
+.investor-sec{background:linear-gradient(135deg,#060f1a 0%,#0d2740 60%,#163550 100%);padding:5.5rem 0;border-top:1px solid rgba(192,145,78,.2)}
+.investor-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.inv-text .tag{margin-bottom:.4rem;display:block}
+.inv-text h2{font-size:clamp(1.8rem,3vw,2.8rem);color:#fff;margin-bottom:1rem}
+.inv-text p{color:rgba(255,255,255,.52);margin-bottom:1.2rem;font-size:.83rem;max-width:400px}
+.inv-text p:last-of-type{margin-bottom:2rem}
+.inv-pillars{display:flex;flex-direction:column;gap:1.2rem}
+.inv-item{display:flex;align-items:flex-start;gap:1.1rem;padding:1.1rem 1.3rem;border:1px solid rgba(192,145,78,.18);border-radius:4px;background:rgba(255,255,255,.025)}
+.inv-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--gold);line-height:1;flex-shrink:0;min-width:2.2rem}
+.inv-txt strong{display:block;color:rgba(255,255,255,.88);font-size:.74rem;font-weight:600;margin-bottom:.18rem}
+.inv-txt span{color:rgba(255,255,255,.4);font-size:.7rem}
+
+/* ═══ CTA ═══ */
+.cta-band{padding:5rem 0;text-align:center}
+.cta-band.cream{background:var(--sand)}
+.cta-band h2{font-size:clamp(1.8rem,3vw,3rem);color:var(--navy);margin-bottom:.8rem}
+.cta-band p{max-width:460px;margin:0 auto 2.2rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ═══ CONTATO ═══ */
+.contato-sec{padding:5.5rem 0;background:var(--cream2);position:relative}
+.contato-sec::before{content:'';position:absolute;top:-60px;left:0;right:0;height:60px;background:linear-gradient(to bottom,var(--sand),var(--cream2));pointer-events:none}
+.ct-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
+.ct-text .tag{margin-bottom:.4rem;display:block}
+.ct-text h2{font-size:clamp(1.9rem,3vw,2.8rem);color:var(--navy);margin-bottom:.8rem}
+.ct-text p{max-width:360px;margin-bottom:1.2rem}
+.ct-info{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+.ct-info-item{display:flex;align-items:center;gap:.6rem;font-size:.76rem;color:var(--muted)}
+.ct-info-icon{font-size:1rem;opacity:.5;flex-shrink:0}
+.ct-form{display:flex;flex-direction:column;gap:.95rem}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-field{display:flex;flex-direction:column;gap:.3rem}
+.form-label{font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);opacity:.7}
+.form-input,.form-select,.form-textarea{width:100%;padding:.85rem 1.1rem;background:var(--white);border:1.5px solid var(--border);color:var(--navy);font-family:'Montserrat',sans-serif;font-size:.78rem;outline:none;border-radius:var(--r);transition:border-color .2s;-webkit-appearance:none;appearance:none}
+.form-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C0914E' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;cursor:pointer}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold)}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(28,42,56,.25)}
+.form-textarea{resize:vertical;min-height:110px;line-height:1.7}
+.form-footer{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.form-note{font-size:.65rem;color:var(--muted)}
+.form-ok{display:none;padding:1rem 1.3rem;background:rgba(42,96,72,.1);border:1px solid rgba(42,96,72,.25);border-radius:var(--r);font-size:.78rem;color:#2a6048;font-weight:500;margin-top:.5rem}
+
+/* ═══ NEWSLETTER ═══ */
+.newsletter{background:var(--navy);padding:4.5rem 0;text-align:center}
+.newsletter h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.5vw,2.3rem);color:#fff;font-weight:400;margin-bottom:.55rem}
+.newsletter p{color:rgba(255,255,255,.45);max-width:380px;margin:0 auto 1.8rem;font-size:.78rem}
+.nl-form{display:flex;gap:.4rem;max-width:390px;margin:0 auto}
+.nl-input{flex:1;padding:.85rem 1.2rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff;font-family:'Montserrat',sans-serif;font-size:.75rem;outline:none;transition:border-color .2s}
+.nl-input::placeholder{color:rgba(255,255,255,.25)}
+.nl-input:focus{border-color:var(--gold)}
+.nl-btn{padding:.85rem 1.5rem;background:var(--gold);border:none;color:#fff;font-family:'Montserrat',sans-serif;font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s;flex-shrink:0}
+.nl-btn:hover{background:var(--gold2)}
+
+/* ═══ FOOTER ═══ */
+footer{background:#06111c;padding:3.5rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.ft-brand-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(255,255,255,.88);letter-spacing:.12em}
+.ft-brand-sub{font-size:.5rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin:.15rem 0 .9rem}
+.ft-desc{font-size:.7rem;line-height:1.9;color:rgba(255,255,255,.3);max-width:205px;margin-bottom:1.1rem}
+.ft-social{display:flex;gap:.6rem}
+.ft-social a{width:32px;height:32px;border:1px solid rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.32);font-size:.7rem;text-decoration:none;transition:all .2s}
+.ft-social a:hover{border-color:var(--gold);color:var(--gold)}
+.ft-col h5{font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.68);margin-bottom:.9rem}
+.ft-col ul{list-style:none}
+.ft-col ul li{margin-bottom:.45rem}
+.ft-col ul li a{font-size:.7rem;color:rgba(255,255,255,.3);cursor:pointer;transition:color .2s}
+.ft-col ul li a:hover{color:var(--gold)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.ft-copy{font-size:.6rem;color:rgba(255,255,255,.55)}
+
+/* ═══ BOTÃO VOLTAR AO TOPO ═══ */
+.back-top{position:fixed;bottom:1.8rem;right:1.8rem;z-index:350;width:48px;height:48px;background:var(--navy);border:1.5px solid rgba(192,145,78,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s,background .2s;box-shadow:0 4px 16px rgba(7,24,44,.25);-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.back-top.show{opacity:1;pointer-events:auto}
+.back-top:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-2px)}
+.back-top svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ═══ MODAL PRIVACIDADE ═══ */
+.priv-overlay{display:none;position:fixed;inset:0;z-index:950;background:rgba(6,17,28,.88);backdrop-filter:blur(6px);align-items:flex-start;justify-content:center;padding:3rem 1rem;overflow-y:auto}
+.priv-overlay.open{display:flex}
+.priv-box{position:relative;width:100%;max-width:760px;background:var(--cream);border-radius:var(--r);overflow:hidden;margin:auto}
+.priv-head{background:var(--navy);padding:1.8rem 2rem 1.4rem;position:relative}
+.priv-head h2{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.6rem;font-weight:400;margin-bottom:.2rem}
+.priv-head p{color:rgba(255,255,255,.45);font-size:.7rem;margin:0}
+.priv-close{position:absolute;top:.9rem;right:1rem;background:rgba(255,255,255,.12);border:none;color:#fff;width:32px;height:32px;border-radius:50%;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.priv-close:hover{background:rgba(192,145,78,.5)}
+.priv-body{padding:2rem;max-height:72vh;overflow-y:auto;line-height:1.8;color:var(--navy);font-size:.78rem}
+.priv-body h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--navy);margin:1.8rem 0 .5rem;padding-bottom:.3rem;border-bottom:1px solid var(--border)}
+.priv-body h3:first-child{margin-top:0}
+.priv-body h4{font-size:.8rem;font-weight:600;color:var(--navy);margin:1rem 0 .3rem}
+.priv-body p{color:#3a4a5a;font-size:.78rem;margin-bottom:.7rem}
+.priv-body ul{margin:.4rem 0 .8rem 1.2rem}
+.priv-body ul li{font-size:.76rem;color:#4a5a6a;margin-bottom:.25rem;line-height:1.6}
+.priv-body .priv-meta{font-size:.68rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem;padding:.6rem .9rem;background:rgba(192,145,78,.07);border-left:2px solid var(--gold)}
+
+/* ═══ COOKIE BANNER ═══ */
+.cookie-bar{position:fixed;bottom:0;left:0;right:0;z-index:500;background:#06111c;border-top:1px solid rgba(192,145,78,.25);padding:1rem 2rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;transform:translateY(100%);transition:transform .5s ease;box-shadow:0 -4px 24px rgba(0,0,0,.3)}
+.cookie-bar.show{transform:none}
+.cookie-bar p{flex:1;font-size:.72rem;color:rgba(255,255,255,.6);line-height:1.6;min-width:240px}
+.cookie-bar a{color:var(--gold);text-decoration:underline;cursor:pointer}
+.cookie-btns{display:flex;gap:.6rem;flex-wrap:wrap;flex-shrink:0}
+.cb-btn{font-family:'Montserrat',sans-serif;font-size:.63rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.6rem 1.3rem;border-radius:2px;cursor:pointer;border:none;transition:all .2s;white-space:nowrap}
+.cb-accept{background:var(--gold);color:#fff}.cb-accept:hover{background:var(--gold2)}
+.cb-reject{background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.2)}.cb-reject:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1100px){
+  .linhas-grid{grid-template-columns:repeat(2,1fr)}
+  .investor-inner{grid-template-columns:1fr;gap:2.5rem}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .rp-grid{grid-template-columns:repeat(2,1fr)}
+  .mf-inner,.feito-feat{grid-template-columns:1fr;gap:2.5rem}
+}
+@media(max-width:768px){
+  .nav-links{display:none}.hamburger{display:flex}
+  .bs-grid{grid-template-columns:repeat(2,1fr)}
+  .linhas-grid{grid-template-columns:repeat(2,1fr)}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .jornada-mosaic{grid-template-columns:1fr;grid-template-rows:auto}
+  .jm-tile{grid-column:1!important;min-height:52vw}
+  .ls-grid{grid-template-columns:1fr}
+  .gallery-strip{grid-template-columns:repeat(3,1fr)}
+  .feito-sub-grid{grid-template-columns:repeat(2,1fr)}
+  .rp-grid{grid-template-columns:1fr}
+  .ct-inner{grid-template-columns:1fr;gap:2.5rem}
+  .form-row-2{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .ft-bottom{flex-direction:column;text-align:center}
+  .hero-body{padding:0 1.5rem 4.5rem}
+}
+@media(max-width:480px){
+  .linhas-grid{grid-template-columns:1fr}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-strip{grid-template-columns:repeat(2,1fr)}
+  .feito-sub-grid{grid-template-columns:1fr}
+  .feito-hero-img img{max-height:none}
+}
+
+/* ═══ NAV: LOJA ONLINE ═══ */
+.nav-links .nav-shop{border:1px solid var(--gold);color:var(--gold)!important;padding:.45rem 1rem;border-radius:2px;margin-left:.4rem;transition:background .2s,color .2s!important}
+.nav-links .nav-shop:hover{background:var(--gold);color:#fff!important;border-color:var(--gold)}
+
+.mob-shop{display:block;margin-top:.5rem;padding:.7rem 2rem;border:1.5px solid var(--gold);color:var(--gold)!important;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-align:center;border-radius:2px}
+
+/* ═══ NOSSA HISTÓRIA ═══ */
+.historia-sec{padding:6rem 0;background:var(--cream);position:relative}
+.historia-sec::before{content:'';position:absolute;top:-60px;left:0;right:0;height:60px;background:linear-gradient(to bottom,var(--sand),var(--cream));pointer-events:none}
+.historia-inner{max-width:720px;margin:0 auto;text-align:center}
+.historia-text .tag{display:block;margin-bottom:.45rem}
+.historia-text h2{font-size:clamp(1.9rem,3vw,3rem);color:var(--navy);margin-bottom:.4rem}
+.historia-text p{margin-bottom:.9rem;max-width:520px;margin-left:auto;margin-right:auto}
+.historia-text p:last-of-type{margin-bottom:1.8rem}
+.historia-logo-card{display:none}
+.historia-logo-card img{width:80px;height:auto;margin:0 auto 1.2rem;display:block;opacity:.85}
+.historia-logo-card .tag{display:block;margin-bottom:.3rem}
+.historia-logo-card h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--navy);margin:.2rem 0 .8rem;font-weight:400}
+.historia-logo-card p{font-size:.78rem;line-height:1.8;color:#4a5a6a;margin-bottom:.6rem}
+.historia-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:3.5rem}
+.historia-pillar{background:rgba(255,255,255,.65);border:1px solid var(--border);padding:1.5rem 1.4rem;border-radius:var(--r)}
+.historia-pillar>span{display:block;font-size:.58rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.historia-pillar h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--navy);margin-bottom:.35rem}
+.historia-pillar p{font-size:.74rem;line-height:1.75;margin:0}
+@media(max-width:900px){
+  .historia-pillars{grid-template-columns:1fr}
+}
+
+/* ═══ PROGRESS BAR ═══ */
+#progress-bar{position:fixed;top:0;left:0;height:2px;width:0%;z-index:500;pointer-events:none;background:linear-gradient(90deg,#7ec8d3 0%,#C0914E 40%,#d4935a 70%,#183C5E 100%);transition:width .08s linear}
+
+/* ═══ QUIZ ═══ */
+.quiz-sec{padding:6rem 0;background:var(--navy3);position:relative;overflow:hidden}
+.quiz-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 30% 50%,rgba(192,145,78,.06) 0%,transparent 70%);pointer-events:none}
+.quiz-sec::after{content:'';position:absolute;top:-60px;left:0;right:0;height:60px;background:linear-gradient(to bottom,var(--white),var(--navy3));pointer-events:none}
+.quiz-inner{position:relative;z-index:1}
+.quiz-head{text-align:center;margin-bottom:3.5rem}
+.quiz-head .tag{display:block;margin-bottom:.5rem}
+.quiz-head h2{font-size:clamp(1.9rem,3vw,3rem);color:#fff;margin-bottom:.5rem}
+.quiz-head p{color:rgba(255,255,255,.48);max-width:460px;margin:0 auto;font-size:.82rem}
+.quiz-progress{display:flex;align-items:center;gap:.75rem;justify-content:center;margin-bottom:2.5rem}
+.quiz-step{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:600;color:rgba(255,255,255,.35);transition:all .3s;flex-shrink:0}
+.quiz-step.done{background:rgba(192,145,78,.25);border-color:var(--gold);color:var(--gold)}
+.quiz-step.active{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 0 12px rgba(192,145,78,.4)}
+.quiz-step-line{flex:1;max-width:40px;height:1px;background:rgba(255,255,255,.1)}
+.quiz-q{max-width:740px;margin:0 auto}
+.quiz-q-text{text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.2vw,1.9rem);color:#fff;font-weight:400;margin-bottom:2rem;line-height:1.3}
+.quiz-options{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem}
+.quiz-opt{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.1);border-radius:4px;padding:1.1rem 1rem;cursor:pointer;transition:all .25s;text-align:center;font-size:.76rem;color:rgba(255,255,255,.7);line-height:1.5;font-weight:300}
+.quiz-opt:hover{background:rgba(192,145,78,.12);border-color:rgba(192,145,78,.45);color:#fff}
+.quiz-opt.selected{background:rgba(192,145,78,.2);border-color:var(--gold);color:#fff}
+.quiz-nav{display:flex;justify-content:center;gap:1rem;margin-top:2.2rem}
+.quiz-result{display:none;max-width:520px;margin:0 auto;text-align:center}
+.quiz-result-img{width:100%;max-width:280px;height:280px;object-fit:cover;border-radius:4px;margin:0 auto 1.8rem;display:block;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.quiz-result .tag{display:block;margin-bottom:.5rem}
+.quiz-result h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:.5rem;font-weight:400}
+.quiz-result p{color:rgba(255,255,255,.55);max-width:380px;margin:0 auto 1.8rem;font-size:.82rem;line-height:1.8}
+.quiz-reset{font-size:.6rem;letter-spacing:.1em;color:rgba(255,255,255,.3);cursor:pointer;text-transform:uppercase;margin-top:1rem;display:inline-block;text-decoration:underline;background:none;border:none;font-family:'Montserrat',sans-serif}
+.quiz-reset:hover{color:rgba(255,255,255,.6)}
+
+/* ═══ EM BREVE ═══ */
+.embreve-sec{padding:6rem 0;background:var(--sand);position:relative}
+.embreve-sec::before{content:'';position:absolute;top:-60px;left:0;right:0;height:60px;background:linear-gradient(to bottom,var(--cream2),var(--sand));pointer-events:none}
+.embreve-head{text-align:center;margin-bottom:3.5rem}
+.embreve-head .tag{display:block;margin-bottom:.6rem}
+.embreve-head h2{font-size:clamp(2.2rem,4.5vw,4rem);color:var(--navy);line-height:1.05;margin-bottom:.6rem}
+.embreve-head p{color:var(--muted);max-width:420px;margin:0 auto;font-size:.82rem}
+.embreve-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.embreve-card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 4px 24px rgba(13,39,64,.06);transition:box-shadow .3s,transform .3s}
+.embreve-card:hover{box-shadow:0 12px 40px rgba(13,39,64,.1);transform:translateY(-3px)}
+.embreve-card-img{position:relative;overflow:hidden;height:260px}
+.embreve-card-img img{width:100%;height:100%;object-fit:contain;background:var(--sand);transition:transform .6s}
+.embreve-card:hover .embreve-card-img img{transform:scale(1.04)}
+.embreve-carousel-wrap{height:260px;position:relative;overflow:hidden}
+.embreve-carousel-track{display:flex;height:100%;transition:transform .5s ease}
+.embreve-carousel-track img{width:100%;flex-shrink:0;height:100%;object-fit:contain;background:var(--sand)}
+.embreve-card-body{padding:1.6rem 1.5rem 1.8rem}
+.embreve-num{font-size:.58rem;font-weight:600;letter-spacing:.14em;color:var(--muted);margin-bottom:.5rem;display:block}
+.embreve-badge{display:inline-block;padding:.18rem .6rem;border:1px solid var(--gold);font-size:.56rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.embreve-badge.planejamento{border-color:var(--muted);color:var(--muted)}
+.embreve-card-body h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;color:var(--navy);margin-bottom:.5rem;font-weight:400}
+.embreve-card-body p{font-size:.76rem;color:var(--muted);line-height:1.75}
+
+/* ═══ NOSSO SÍMBOLO (standalone dark) ═══ */
+.simbolo-sec{padding:8rem 0;background:var(--navy3);text-align:center;position:relative}
+.simbolo-sec::before{content:'';position:absolute;top:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,#0a1e30,var(--navy3));pointer-events:none}
+.simbolo-inner{max-width:560px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:1.6rem}
+.simbolo-logo{width:185px;height:auto;margin:0 auto;filter:brightness(10) sepia(1) saturate(0) brightness(2.5);opacity:.9}
+.simbolo-brand{font-family:'Cormorant Garamond',serif;font-size:.95rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:300}
+.simbolo-brand em{color:#7ec8d3;font-style:normal}
+.simbolo-rule{width:32px;height:1px;background:var(--gold);opacity:.3;margin:.2rem 0}
+.simbolo-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:#fff;font-weight:300;letter-spacing:.04em}
+.simbolo-text{max-width:50ch;font-size:.87rem;line-height:1.95;color:rgba(255,255,255,.6);font-weight:300;display:flex;flex-direction:column;gap:.95rem;text-align:center}
+.simbolo-tagline{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);opacity:.9;margin-top:.5rem;letter-spacing:.03em;line-height:1.6}
+
+/* ═══ FOOTER SOCIAL ICONS ═══ */
+.ft-social a svg{width:16px;height:16px;fill:currentColor;display:block}
+.ft-social a{width:34px;height:34px}
+
+/* ═══ NEWSLETTER INLINE MESSAGES ═══ */
+.nl-ok{display:none;padding:.7rem 1rem;background:rgba(42,96,72,.15);border:1px solid rgba(42,96,72,.3);border-radius:2px;font-size:.73rem;color:#4a9a72;margin-top:.6rem;text-align:center}
+.nl-err{display:none;padding:.7rem 1rem;background:rgba(150,30,30,.1);border:1px solid rgba(150,30,30,.2);border-radius:2px;font-size:.73rem;color:#b05050;margin-top:.6rem;text-align:center}
+
+/* ═══ ADDITIONAL RESPONSIVE ═══ */
+@media(max-width:1024px){
+  .quiz-options{grid-template-columns:repeat(2,1fr)}
+  .embreve-cards{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .quiz-options{grid-template-columns:1fr}
+  .hero-body{padding:0 0 4rem 1.6rem}
+  .embreve-cards{grid-template-columns:1fr}
+  .historia-pillars{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .quiz-options{grid-template-columns:1fr}
+  .quiz-step-line{max-width:20px}
+  .simbolo-inner{padding:0 1rem}
+}
+
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="text-decoration:none">
+      <img src="./imagens/logo.png" class="nav-logo" alt="SAL OCEANO aromas" onerror="this.style.display='none'">
+      <div class="nav-brand-words">
+        <span class="nav-brand-name"><span class="nav-sal">SAL</span> <span class="nav-oc">OCEANO</span></span>
+        <span class="nav-brand-sub">Aromas</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a onclick="scrollToId('sec-aromas')" data-s="sec-aromas">Aromas</a></li>
+      <li><a onclick="scrollToId('sec-lifestyle')" data-s="sec-lifestyle">Lifestyle</a></li>
+      <li><a onclick="scrollToId('sec-resort')" data-s="sec-resort">Resort</a></li>
+      <li><a onclick="scrollToId('sec-quiz')" data-s="sec-quiz">Quiz</a></li>
+      <li><a onclick="scrollToId('sec-simbolo')" data-s="sec-simbolo">Nosso Símbolo</a></li>
+      <li><a onclick="scrollToId('sec-historia')" data-s="sec-historia">Nossa Essência</a></li>
+      <li><a onclick="scrollToId('contato')" data-s="contato">Fale Conosco</a></li>
+      <li><a href="https://www.saloceanoaromas.com.br" target="_blank" class="nav-shop">Loja Online</a></li>
+    </ul>
+    <button class="hamburger" id="hbg" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob-menu" id="mob-menu">
+  <a onclick="scrollToId('sec-aromas');toggleMenu()">Aromas</a>
+  <a onclick="scrollToId('sec-lifestyle');toggleMenu()">Lifestyle</a>
+  <a onclick="scrollToId('sec-resort');toggleMenu()">Resort</a>
+  <a onclick="scrollToId('sec-quiz');toggleMenu()">Quiz</a>
+  <a onclick="scrollToId('sec-simbolo');toggleMenu()">Nosso Símbolo</a>
+  <a onclick="scrollToId('sec-historia');toggleMenu()">Nossa Essência</a>
+  <a onclick="scrollToId('contato');toggleMenu()">Fale Conosco</a>
+  <a href="https://www.saloceanoaromas.com.br" target="_blank" class="mob-shop">Loja Online</a>
+</div>
+
+<!-- HERO CAROUSEL -->
+<section class="hero" id="hero">
+  <div id="hero-slides"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-body">
+    <span class="hero-pre">Um destino que começa pelos sentidos</span>
+    <h1>SAL<br>OCEANO<span class="hero-h1-sub">aromas</span></h1>
+    <p class="hero-sub">Do amanhecer à madrugada, cada fragrância, um momento à beira-mar.</p>
+    <div class="hero-btns">
+      <button class="hero-discover" onclick="scrollToId('manifesto')">Descobrir</button>
+    </div>
+    <div class="hero-dots" id="hero-dots"></div>
+  </div>
+</section>
+
+<!-- BRAND STRIP -->
+<div class="brand-strip">
+  <div class="container">
+    <div class="bs-grid">
+      <div class="bs-item rv"><span class="bs-icon">🌿</span><strong class="bs-label">Inspiração Natural</strong><span class="bs-desc">Do oceano para sua vida</span></div>
+      <div class="bs-item rv rv-d1"><span class="bs-icon">◈</span><strong class="bs-label">Fragrâncias Autorais</strong><span class="bs-desc">Aromas únicos e memoráveis</span></div>
+      <div class="bs-item rv rv-d2"><span class="bs-icon">🤲</span><strong class="bs-label">Feito à Mão no Brasil</strong><span class="bs-desc">Produção artesanal consciente</span></div>
+      <div class="bs-item rv rv-d3"><span class="bs-icon">✦</span><strong class="bs-label">Experiências que perduram</strong><span class="bs-desc">Momentos transformados em memória</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <div class="container">
+    <div class="mf-inner">
+      <div class="mf-photo rv">
+        <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=900&q=85" alt="Oceano SAL OCEANO">
+      </div>
+      <div class="mf-text">
+        <span class="tag rv">Nossa Essência</span>
+        <h2 class="rv rv-d1">Do mar,<br>para a vida.</h2>
+        <span class="gold-rule rv rv-d1"></span>
+        <p class="rv rv-d2">Nascemos do encontro do sal com o vento, da luz que toca o oceano ao amanhecer. SAL OCEANO aromas traduz a elegância natural do litoral em experiências sensoriais que acolhem, perfumam e transformam ambientes em refúgios de bem-estar.</p>
+        <p class="rv rv-d3">Cada fragrância é um momento real. Cada peça carrega o valor do toque humano, de quem vive o litoral com alma. Somos uma marca enraizada na cultura da praia, comprometida com beleza, autenticidade e consciência.</p>
+        <a onclick="scrollToId('sec-historia')" style="cursor:pointer" class="btn btn-navy rv rv-d3">Conheça nossa história</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 LINHAS -->
+<div>
+  <div class="linhas-header">
+    <span class="tag">Nossas Linhas</span>
+    <h2>Um universo completo à beira-mar</h2>
+  </div>
+  <div class="linhas-grid">
+    <div class="linha-card" onclick="scrollToId('sec-aromas')">
+      <img src="./imagens/difusor-amanhecer.jpeg" alt="Aromas SAL OCEANO">
+      <div class="linha-ov"><h3>Aromas</h3><p>Velas, difusores e águas para tecidos que perfumam e transformam.</p><span class="link-arr">Explorar</span></div>
+    </div>
+    <div class="linha-card" onclick="location.href='https://www.saloceanoaromas.com.br'">
+      <img src="./imagens/agua-tecido-01.jpeg" alt="Águas para Tecidos">
+      <div class="linha-ov"><h3>Águas para Tecidos</h3><p>Leveza e aroma que se renovam a cada uso.</p><span class="link-arr">Explorar</span></div>
+    </div>
+    <div class="linha-card" onclick="scrollToId('sec-lifestyle')">
+      <img src="./imagens/bolsa-tote-01.jpg" alt="Lifestyle SAL OCEANO">
+      <div class="linha-ov"><h3>Lifestyle</h3><p>Bolsas, acessórios e necessaires para carregar o oceano com você.</p><span class="link-arr">Explorar</span></div>
+    </div>
+    <div class="linha-card" onclick="scrollToId('sec-feito')">
+      <img src="./imagens/artesanal-exclusivo-01.jpg" alt="Feito à Mão SAL OCEANO">
+      <div class="linha-ov"><h3>Feito à Mão</h3><p>Cerâmica artesanal e crochê em pequenas séries exclusivas.</p><span class="link-arr">Explorar</span></div>
+    </div>
+    <div class="linha-card" onclick="location.href='https://www.saloceanoaromas.com.br'">
+      <img src="./imagens/artesanal-kit-02.jpg" alt="Spa e Amenities SAL OCEANO">
+      <div class="linha-ov"><h3>Spa & Amenities</h3><p>Kits e amenities para hotéis e resorts de alto padrão.</p><span class="link-arr">Explorar</span></div>
+    </div>
+    <div class="linha-card" onclick="scrollToId('sec-resort')">
+      <img src="https://images.unsplash.com/photo-1755396884135-de0d28d460dd?w=700&q=80" alt="Projeto Resort SAL OCEANO">
+      <div class="linha-ov"><h3>Projeto<br>Resort</h3><p>A visão de futuro da marca: hospitalidade com alma do oceano.</p><span class="link-arr">Descobrir</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="fade-cream-white"></div>
+
+<!-- PRODUTOS EM DESTAQUE -->
+<section class="produtos-sec" id="sec-aromas">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Coleção</span>
+      <h2>Produtos em Destaque</h2>
+      <p>Fragrâncias e objetos que transformam ambientes em refúgios. <a href="https://www.saloceanoaromas.com.br" target="_blank" class="link-arr" style="display:inline-flex">Ver todos</a></p>
+    </div>
+    <div class="prod-grid">
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv" id="prod-assinatura">
+        <div class="prod-img"><img src="./imagens/difusor-sal-marinho.jpeg" alt="Pitanga e Hortelã Difusor"></div>
+        <div class="prod-info"><div class="prod-type">Difusor de Ambiente</div><div class="prod-name">Pitanga e Hortelã</div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d1">
+        <div class="prod-img"><img src="./imagens/agua-tecido-03.jpeg" alt="Brisa Marinha Água para Tecidos"></div>
+        <div class="prod-info"><div class="prod-type">Água para Tecidos</div><div class="prod-name">Madeira à Deriva</div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d2" id="prod-brisa">
+        <div class="prod-img"><img src="./imagens/difusor-brisa-manha.jpeg" alt="SAL OCEANO Aroma de Assinatura"><span class="prod-badge badge-gold">Assinatura</span></div>
+        <div class="prod-info"><div class="prod-type">Difusor de Ambiente</div><div class="prod-name">SAL OCEANO <small style="font-size:.7em;font-weight:300;color:var(--gold)">(Aroma de Assinatura)</small></div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d3">
+        <div class="prod-img"><img src="./imagens/vela-amanhecer.jpeg" alt="Brisa do Mar Vela"></div>
+        <div class="prod-info"><div class="prod-type">Vela Aromática</div><div class="prod-name">Brisa do Mar</div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d1" id="prod-sal">
+        <div class="prod-img"><img src="./imagens/vela-sal-marinho-1.png" alt="Sal Marinho Vela"><span class="prod-badge badge-navy">Mais Amado</span></div>
+        <div class="prod-info"><div class="prod-type">Vela Aromática</div><div class="prod-name">Sal Marinho</div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d2" id="prod-praia">
+        <div class="prod-img"><img src="./imagens/vela-praia-serena.jpeg" alt="Coco e Areia Vela"></div>
+        <div class="prod-info"><div class="prod-type">Vela Aromática</div><div class="prod-name">Coco e Areia</div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d3" id="prod-pordosol">
+        <div class="prod-img"><img src="./imagens/vela-por-do-sol.jpeg" alt="Pôr do Sol Vela"><span class="prod-badge badge-navy">Ed. Limitada</span></div>
+        <div class="prod-info"><div class="prod-type">Vela Aromática</div><div class="prod-name">Pôr do Sol</div></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="prod-card rv rv-d4" id="prod-luzes">
+        <div class="prod-img"><img src="./imagens/difusor-luzes-oceano.jpeg" alt="Luzes do Oceano Difusor"><span class="prod-badge badge-navy">Ed. Limitada</span></div>
+        <div class="prod-info"><div class="prod-type">Difusor de Ambiente</div><div class="prod-name">Luzes do Oceano</div></div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="btn btn-gold">Ver coleção completa</a>
+    </div>
+  </div>
+</section>
+
+<!-- JORNADA DAS FRAGRÂNCIAS -->
+<section class="jornada-sec">
+  <div class="sec-head">
+    <span class="tag">Jornada das Fragrâncias</span>
+    <h2>Do amanhecer à madrugada</h2>
+    <p>Cada momento do dia à beira-mar, transformado em aroma.</p>
+  </div>
+  <div class="jornada-mosaic">
+    <!-- Top row: 3 tiles -->
+    <a class="jm-tile" onclick="scrollToId('prod-brisa')" style="cursor:pointer">
+      <div class="jm-inner" id="jm-0">
+        <div class="jm-slide">
+          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=700&q=85" alt="Brisa da Manhã">
+          <div class="jm-ov"><div><div class="jm-name">Brisa da Manhã</div><span class="jm-type">Difusor de ambiente</span></div></div>
+        </div>
+        <div class="jm-slide jm-prod-slide">
+          <img src="./imagens/difusor-brisa-manha-carrossel.png" alt="Difusor Brisa da Manhã" loading="lazy">
+          <div class="jm-prod-label"><div class="jm-name">Brisa da Manhã</div><span class="jm-type">Difusor de ambiente</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="jm-tile" onclick="scrollToId('prod-sal')" style="cursor:pointer">
+      <div class="jm-inner" id="jm-1">
+        <div class="jm-slide">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=85" alt="Sal Marinho">
+          <div class="jm-ov"><div><div class="jm-name">Sal Marinho</div><span class="jm-type">Vela aromática</span></div></div>
+        </div>
+        <div class="jm-slide jm-prod-slide">
+          <img src="./imagens/vela-aromatica-sal-marinho-carossel.png" alt="Vela Sal Marinho" loading="lazy">
+          <div class="jm-prod-label"><div class="jm-name">Sal Marinho</div><span class="jm-type">Vela aromática</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="jm-tile" onclick="scrollToId('prod-praia')" style="cursor:pointer">
+      <div class="jm-inner" id="jm-2">
+        <div class="jm-slide">
+          <img src="https://images.unsplash.com/photo-1581642623417-c42eb8dc1694?w=700&q=85" alt="Praia Serena">
+          <div class="jm-ov"><div><div class="jm-name">Praia Serena</div><span class="jm-type">Difusor de ambiente</span></div></div>
+        </div>
+        <div class="jm-slide jm-prod-slide">
+          <img src="./imagens/difusor-praia-serena-carrossel.png" alt="Difusor Praia Serena" loading="lazy">
+          <div class="jm-prod-label"><div class="jm-name">Praia Serena</div><span class="jm-type">Difusor de ambiente</span></div>
+        </div>
+      </div>
+    </a>
+    <!-- Bottom row: 2 tiles (each spans 3 of 6 cols) -->
+    <a class="jm-tile" onclick="scrollToId('prod-pordosol')" style="cursor:pointer">
+      <div class="jm-inner" id="jm-3">
+        <div class="jm-slide">
+          <img src="https://images.unsplash.com/photo-1759534026727-8db837a6a595?w=1000&q=85" alt="Pôr do Sol">
+          <div class="jm-ov"><div><div class="jm-name">Pôr do Sol</div><span class="jm-type">Vela aromática</span></div></div>
+        </div>
+        <div class="jm-slide jm-prod-slide">
+          <img src="./imagens/vela-aromatica-por-do-sol-carossel.png" alt="Vela Pôr do Sol" loading="lazy">
+          <div class="jm-prod-label"><div class="jm-name">Pôr do Sol</div><span class="jm-type">Vela aromática</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="jm-tile" onclick="scrollToId('prod-luzes')" style="cursor:pointer">
+      <div class="jm-inner" id="jm-4">
+        <div class="jm-slide">
+          <img src="https://images.unsplash.com/photo-1698510352419-0d1eb48ff224?w=1000&q=85" alt="Luzes do Oceano">
+          <div class="jm-ov"><div><div class="jm-name">Luzes do Oceano</div><span class="jm-type">Difusor de ambiente</span></div></div>
+        </div>
+        <div class="jm-slide jm-prod-slide">
+          <img src="./imagens/difusor-luzes-do-oceano-carrossel.png" alt="Difusor Luzes do Oceano" loading="lazy">
+          <div class="jm-prod-label"><div class="jm-name">Luzes do Oceano</div><span class="jm-type">Difusor de ambiente</span></div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+<div class="jornada-fade"></div>
+
+<!-- QUIZ -->
+<section class="quiz-sec" id="sec-quiz">
+  <div class="container quiz-inner">
+    <div class="quiz-head rv">
+      <span class="tag">Descoberta</span>
+      <h2>Qual é o seu aroma?</h2>
+      <p>Quatro perguntas para descobrir a fragrância SAL OCEANO feita para você.</p>
+    </div>
+
+    <!-- Progress steps (clicáveis para voltar) -->
+    <div class="quiz-progress" id="quiz-progress">
+      <div class="quiz-step active" id="qstep-1" onclick="quizGoTo(1)" style="cursor:pointer" title="Pergunta 1">1</div>
+      <div class="quiz-step-line"></div>
+      <div class="quiz-step" id="qstep-2" onclick="quizGoTo(2)" style="cursor:pointer" title="Pergunta 2">2</div>
+      <div class="quiz-step-line"></div>
+      <div class="quiz-step" id="qstep-3" onclick="quizGoTo(3)" style="cursor:pointer" title="Pergunta 3">3</div>
+      <div class="quiz-step-line"></div>
+      <div class="quiz-step" id="qstep-4" onclick="quizGoTo(4)" style="cursor:pointer" title="Pergunta 4">4</div>
+    </div>
+
+    <!-- Questions container -->
+    <div id="quiz-questions">
+
+      <!-- Q1 -->
+      <div class="quiz-q" id="quiz-q1">
+        <div class="quiz-q-text">O que você quer sentir ao entrar em um ambiente perfumado?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(1,this,['fresco_limpo'])">Leveza e clareza que renovam o ar</div>
+          <div class="quiz-opt" onclick="quizSelect(1,this,['fresco_limpo','marinho'])">Brisa marinha, sensação de oceano aberto</div>
+          <div class="quiz-opt" onclick="quizSelect(1,this,['solar','gourmand'])">Calor dourado de fim de tarde</div>
+          <div class="quiz-opt" onclick="quizSelect(1,this,['gourmand'])">Aconchego cremoso e envolvente</div>
+          <div class="quiz-opt" onclick="quizSelect(1,this,['profundo'])">Profundidade e silêncio do mar noturno</div>
+          <div class="quiz-opt" onclick="quizSelect(1,this,['signature','fresco_limpo','solar'])">Equilíbrio entre frescor, sol e conforto</div>
+        </div>
+        <div class="quiz-nav" style="display:none"><button id="qnext-1"></button></div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="quiz-q" id="quiz-q2" style="display:none">
+        <div class="quiz-q-text">Qual imagem mais conecta você ao oceano?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(2,this,['fresco_limpo','verde_sereno'])">Praia ao amanhecer, o horizonte por começar</div>
+          <div class="quiz-opt" onclick="quizSelect(2,this,['solar'])">Mar brilhando ao meio-dia, sol a pino</div>
+          <div class="quiz-opt" onclick="quizSelect(2,this,['solar','gourmand'])">Horizonte dourado ao entardecer</div>
+          <div class="quiz-opt" onclick="quizSelect(2,this,['profundo'])">Noite de mar sob a lua, tudo em silêncio</div>
+          <div class="quiz-opt" onclick="quizSelect(2,this,['gourmand','solar'])">Areia morna, coco fresco e brisa lenta</div>
+          <div class="quiz-opt" onclick="quizSelect(2,this,['verde_sereno'])">Vegetação costeira, verde entre as dunas</div>
+        </div>
+        <div class="quiz-nav" style="display:none"><button id="qnext-2"></button></div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="quiz-q" id="quiz-q3" style="display:none">
+        <div class="quiz-q-text">Como você prefere se sentir no dia a dia?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(3,this,['fresco_limpo','marinho'])">Fresco e revigorante, como o ar da manhã</div>
+          <div class="quiz-opt" onclick="quizSelect(3,this,['solar'])">Solar, otimista e cheio de energia</div>
+          <div class="quiz-opt" onclick="quizSelect(3,this,['verde_sereno'])">Sereno e natural, em harmonia com a natureza</div>
+          <div class="quiz-opt" onclick="quizSelect(3,this,['gourmand'])">Quente, acolhedor e envolvente</div>
+          <div class="quiz-opt" onclick="quizSelect(3,this,['profundo'])">Misterioso e singular, com profundidade</div>
+          <div class="quiz-opt" onclick="quizSelect(3,this,['signature','fresco_limpo'])">Limpo, elegante e discreto</div>
+        </div>
+        <div class="quiz-nav" style="display:none"><button id="qnext-3"></button></div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="quiz-q" id="quiz-q4" style="display:none">
+        <div class="quiz-q-text">Que hora do dia você mais se conecta com o oceano?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(4,this,['fresco_limpo','verde_sereno'])">Amanhecer, quando tudo está por começar</div>
+          <div class="quiz-opt" onclick="quizSelect(4,this,['solar'])">Meio-dia, sol pleno e mar brilhante</div>
+          <div class="quiz-opt" onclick="quizSelect(4,this,['solar','gourmand'])">Por do sol, a hora dourada</div>
+          <div class="quiz-opt" onclick="quizSelect(4,this,['profundo'])">Noite, quando o mar fala outro idioma</div>
+          <div class="quiz-opt" onclick="quizSelect(4,this,['gourmand','solar'])">Tarde preguicosa, areia morna e brisa lenta</div>
+          <div class="quiz-opt" onclick="quizSelect(4,this,['signature','fresco_limpo'])">Dia nublado, mar calmo e ar limpo</div>
+        </div>
+        <div class="quiz-nav" style="display:none"><button id="qnext-4"></button></div>
+      </div>
+
+    </div><!-- /quiz-questions -->
+
+    <!-- Result -->
+    <div class="quiz-result" id="quiz-result">
+      <span class="tag" id="qr-tipo"></span>
+      <img class="quiz-result-img rv" id="qr-img" src="" alt="">
+      <h3 id="qr-nome"></h3>
+      <p id="qr-desc"></p>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="btn btn-gold">Loja Online</a>
+      <br>
+      <button class="quiz-reset" onclick="quizReset()">Refazer o quiz</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- LIFESTYLE -->
+<section class="lifestyle-sec" id="sec-lifestyle">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Linha Lifestyle</span>
+      <h2>Objetos que acompanham seu ritmo</h2>
+      <p>Funcionais, sofisticados e inspirados no litoral, para o dia a dia e para a viagem.</p>
+    </div>
+    <div class="ls-grid">
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="ls-card rv">
+        <div class="ls-card-img"><img src="./imagens/bolsa-tote-01.jpg" alt="Bolsas & Totes SAL OCEANO"></div>
+        <div class="ls-card-body"><span class="tag">Categoria</span><h3>Bolsas & Totes</h3><p>Design natural e elegante para levar o essencial com leveza. Materiais selecionados e duráveis.</p><span class="link-arr">Ver coleção</span></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="ls-card rv rv-d1">
+        <div class="ls-card-img"><img src="./imagens/bone-lifestyle.jpg" alt="Bonés SAL OCEANO"></div>
+        <div class="ls-card-body"><span class="tag">Categoria</span><h3>Bonés</h3><p>Conforto e proteção com o espírito do mar em cada detalhe. Atemporais para qualquer destino.</p><span class="link-arr">Ver coleção</span></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="ls-card rv rv-d2">
+        <div class="ls-card-img"><img src="./imagens/kit-presente-01.jpg" alt="Necessaires SAL OCEANO"></div>
+        <div class="ls-card-body"><span class="tag">Categoria</span><h3>Necessaires & Cases</h3><p>Organização e praticidade para seus itens em qualquer jornada.</p><span class="link-arr">Ver coleção</span></div>
+      </a>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="ls-card rv rv-d3">
+        <div class="ls-card-img"><img src="./imagens/lifestyle-kanga.jpg" alt="Acessórios SAL OCEANO"></div>
+        <div class="ls-card-body"><span class="tag">Categoria</span><h3>Acessórios de Viagem</h3><p>Kangas, sachês e kits que elevam qualquer experiência à beira-mar.</p><span class="link-arr">Ver coleção</span></div>
+      </a>
+    </div>
+    <!-- Gallery strip: imagens distintas -->
+    <div class="gallery-strip">
+      <div class="gs-img rv"><img src="./imagens/bolsa-tote-02.jpg" alt="Bolsa Tote SAL OCEANO"></div>
+      <div class="gs-img rv rv-d1"><img src="./imagens/bolsa-tote-03.jpg" alt="Bolsa Tote SAL OCEANO"></div>
+      <div class="gs-img rv rv-d2"><img src="./imagens/bone-lifestyle-02.jpg" alt="Boné SAL OCEANO"></div>
+      <div class="gs-img rv rv-d3"><img src="./imagens/lifestyle-toalha.jpg" alt="Lifestyle SAL OCEANO"></div>
+      <div class="gs-img rv rv-d4"><img src="./imagens/kit-presente-02.jpg" alt="Kit SAL OCEANO"></div>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="btn btn-navy">Ver toda a linha Lifestyle</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEITO À MÃO -->
+<section class="feito-sec" id="sec-feito">
+  <div class="container">
+    <div class="feito-head rv">
+      <span class="tag">Linha Artesanal</span>
+      <h2>Feito à Mão</h2>
+      <span class="gold-rule rv rv-d1" style="margin:1.2rem auto"></span>
+      <p class="rv rv-d1">Pequenas séries, tempo de criação e o toque humano que transforma matéria em essência.</p>
+    </div>
+  </div>
+  <div class="feito-hero-img rv rv-d1">
+    <img src="./imagens/feito-a-mao-hero.png" alt="Produtos feitos à mão SAL OCEANO" loading="lazy" onerror="this.src='./imagens/artesanal-exclusivo-01.jpg'">
+  </div>
+  <div class="container">
+    <div class="feito-sub-grid">
+      <div class="feito-sub rv"><div class="fs-icon">◻</div><h4>Cerâmica & Argila</h4><p>Peças moldadas à mão em cerâmica natural, uma a uma. Cada peça carrega marcas únicas do gesto humano.</p></div>
+      <div class="feito-sub rv rv-d1"><div class="fs-icon">〰</div><h4>Bolsa Tote Bikini</h4><p>Fios entrelaçados com tempo e intenção. Bolsas feitas à mão por artesãs que transformam técnica em afeto.</p></div>
+      <div class="feito-sub rv rv-d2"><div class="fs-icon">◇</div><h4>Sais de Banho</h4><p>Pureza mineral do oceano em cada grão. Sal marinho natural com óleos essenciais para uma experiência sensorial completa.</p></div>
+      <div class="feito-sub rv rv-d3"><div class="fs-icon">✦</div><h4>Pequenas Séries</h4><p>Produção em lotes reduzidos para preservar o processo artesanal e a qualidade em cada detalhe.</p></div>
+    </div>
+    <!-- Frase de fechamento -->
+    <div style="text-align:center;padding:4rem 0 1rem;border-top:1px solid var(--border);margin-top:3.5rem" class="rv">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);color:var(--navy);font-weight:400;margin-bottom:.6rem">O que é feito à mão, permanece.</h3>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--muted);margin-bottom:2rem">Peças que carregam alma, natureza e o tempo do cuidado.</p>
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="btn btn-gold">Conhecer a coleção</a>
+    </div>
+  </div>
+</section>
+
+<!-- EM BREVE PERTO DE VOCE -->
+<section class="embreve-sec" id="sec-embreve">
+  <div class="container">
+    <div class="embreve-head rv">
+      <span class="tag">Onde nos encontrar</span>
+      <h2>Em breve,<br>perto de você</h2>
+      <p>A SAL OCEANO está chegando a novos espaços. Acompanhe nossa expansão.</p>
+    </div>
+    <div class="embreve-cards">
+
+      <!-- Loja Conceito -->
+      <div class="embreve-card rv">
+        <div class="embreve-card-img" onclick="document.getElementById('lb-loja').classList.add('open')" style="cursor:zoom-in">
+          <img src="./imagens/loja-conceito-01.png" alt="Loja Conceito SAL OCEANO" loading="lazy">
+        </div>
+        <div class="embreve-card-body">
+          <span class="embreve-num">01</span>
+          <span class="embreve-badge">Em Breve</span>
+          <h3>Loja Conceito</h3>
+          <p>Nosso primeiro espaco fisico imersivo, onde cada detalhe transporta voce ao oceano. Uma experiencia sensorial completa, do aroma a estetica visual.</p>
+        </div>
+      </div>
+
+      <!-- Quiosques em Shoppings -->
+      <div class="embreve-card rv rv-d1">
+        <div class="embreve-carousel-wrap" onclick="document.getElementById('lb-quiosques').classList.add('open')" style="cursor:zoom-in">
+          <div class="embreve-carousel-track" id="emb-track-1">
+            <img src="./imagens/kiosque-render-01.png" alt="Quiosque SAL OCEANO Shopping">
+            <img src="./imagens/kiosque-render-02.png" alt="Quiosque SAL OCEANO Shopping">
+            <img src="./imagens/kiosque-render-03.png" alt="Quiosque SAL OCEANO Shopping">
+            <img src="./imagens/kiosque-render-04.png" alt="Quiosque SAL OCEANO Shopping">
+          </div>
+        </div>
+        <div class="embreve-card-body">
+          <span class="embreve-num">02</span>
+          <span class="embreve-badge">Em Breve</span>
+          <h3>Quiosques em Shoppings</h3>
+          <p>Tres quiosques conceito nos principais shoppings, experimente, sinta e leve o oceano para casa.</p>
+        </div>
+      </div>
+
+      <!-- Pontos de Praia -->
+      <div class="embreve-card rv rv-d2">
+        <div class="embreve-carousel-wrap" onclick="document.getElementById('lb-emb-praia').classList.add('open')" style="cursor:zoom-in">
+          <div class="embreve-carousel-track" id="emb-track-2">
+            <img src="./imagens/quiosque-luxo.png" alt="Ponto de Praia SAL OCEANO 1">
+            <img src="./imagens/quiosque-experiencia.png" alt="Ponto de Praia SAL OCEANO 2">
+            <img src="./imagens/quiosque-low-profile.png" alt="Ponto de Praia SAL OCEANO 3">
+            <img src="./imagens/qiosque-compacto.png" alt="Ponto de Praia SAL OCEANO 4">
+          </div>
+        </div>
+        <div class="embreve-card-body">
+          <span class="embreve-num">03</span>
+          <span class="embreve-badge">Em Breve</span>
+          <h3>Pontos de Praia</h3>
+          <p>Parcerias com pousadas e hoteis boutique a beira-mar. A experiencia SAL OCEANO comeca antes mesmo do check-in.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJETO RESORT -->
+<div class="resort-sec" id="sec-resort">
+
+  <div class="resort-hero">
+    <div class="resort-hero-bg">
+      <img src="https://images.unsplash.com/photo-1755396884135-de0d28d460dd?w=1600&q=85" alt="SAL OCEANO Resort">
+    </div>
+    <div class="resort-hero-text">
+      <span class="tag">Projeto Resort</span>
+      <h2>Hospitalidade inspirada<em>pelo oceano.</em></h2>
+      <p>Da loja conceito aos amenities, do spa aos futuros destinos da marca: uma experiência sensorial completa para a hospitalidade de alto padrão.</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;color:rgba(255,255,255,.5);font-size:.92rem;margin-top:.5rem;margin-bottom:0">Um refúgio sensorial onde o oceano inspira cada detalhe.</p>
+    </div>
+  </div>
+
+
+
+  <section class="investor-sec" id="sec-investor">
+    <div class="container">
+      <div class="investor-inner">
+        <div class="inv-text">
+          <span class="tag rv">Para Investidores</span>
+          <h2 class="rv rv-d1">Seja parte<br>deste projeto.</h2>
+          <span class="gold-rule rv rv-d1" style="background:var(--gold)"></span>
+          <p class="rv rv-d2">SAL OCEANO está em expansão: um universo de marca construído sobre autenticidade, experiência sensorial e cultura do litoral brasileiro, pronto para crescer com quem enxerga o mesmo horizonte.</p>
+          <p class="rv rv-d3">Da loja conceito ao resort, buscamos parceiros que compartilhem nossa visão de hospitalidade com alma e propósito.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem">
+        <a href="https://www.saloceanoresorts.com.br" target="_blank" class="btn btn-gold rv rv-d3">Projeto Resort</a>
+        <a onclick="goToContact('investidor')" class="btn btn-w rv rv-d3" style="cursor:pointer">Falar com nossa equipe</a>
+      </div>
+        </div>
+        <div class="inv-pillars">
+          <div class="inv-item rv"><div class="inv-num">01</div><div class="inv-txt"><strong>Expansão de Quiosques</strong><span>Aeroportos e shoppings premium no Brasil</span></div></div>
+          <div class="inv-item rv rv-d1"><div class="inv-num">02</div><div class="inv-txt"><strong>Rede de Hotelaria</strong><span>Amenities para resorts e hotéis de alto padrão</span></div></div>
+          <div class="inv-item rv rv-d2"><div class="inv-num">03</div><div class="inv-txt"><strong>SAL OCEANO Resort</strong><span>Destino de hospitalidade, em desenvolvimento</span></div></div>
+          <div class="inv-item rv rv-d3"><div class="inv-num">04</div><div class="inv-txt"><strong>Lojas Conceito</strong><span>Formato imersivo nas principais capitais costeiras</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- NOSSO SIMBOLO -->
+<section class="simbolo-sec" id="sec-simbolo">
+  <div class="simbolo-inner">
+    <img src="./imagens/simbolo-coral.png" class="simbolo-logo rv" alt="Símbolo SAL OCEANO" onerror="this.src='./imagens/logo.png'">
+    <div class="simbolo-rule rv rv-d1"></div>
+    <h2 class="simbolo-title rv rv-d1">Nosso símbolo</h2>
+    <div class="simbolo-text rv rv-d2">
+      <p>SAL OCEANO nasce daquilo que o mar carrega de mais essencial. O nome representa os sais minerais presentes na água, os aromas transportados pela brisa e a sensação de renovação que encontramos quando estamos próximos ao oceano.</p>
+      <p>Nosso símbolo é inspirado em um coral duro. Embora sua forma possa lembrar uma árvore, ele pertence ao fundo do mar. Os corais duros retiram da água marinha elementos como cálcio e carbonato e, por meio de um processo chamado calcificação, constroem lentamente seus esqueletos minerais.</p>
+      <p>Essa transformação traduz a essência da SAL OCEANO: retirar do oceano inspiração para criar produtos que permanecem na memória, transformam ambientes e despertam sensações. O coral também representa origem, resistência, crescimento e conexão.</p>
+    </div>
+    <p class="simbolo-tagline rv rv-d3">SAL OCEANO aromas, a essência do oceano transformada em experiência.</p>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-band cream">
+  <div class="container">
+    <h2 class="rv">Às vezes, você não precisa ir até o oceano.</h2>
+    <p class="rv rv-d1" style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);font-style:italic;font-weight:300;margin-bottom:1.4rem">"Basta deixar que ele encontre você."</p>
+    <p class="rv rv-d2">Conheça o universo SAL OCEANO e descubra como a essência do litoral pode transformar seu dia.</p>
+    <div class="cta-btns rv rv-d3" style="justify-content:center">
+      <a href="https://www.saloceanoaromas.com.br" target="_blank" class="btn btn-navy">Explorar a loja</a>
+    </div>
+  </div>
+</section>
+
+<!-- NOSSA HISTÓRIA -->
+<section class="historia-sec" id="sec-historia">
+  <div class="container">
+    <div class="historia-inner">
+
+      <div class="historia-text">
+        <span class="tag rv">Nossa Essência</span>
+        <h2 class="rv rv-d1">O oceano como origem.<br>A memória como destino.</h2>
+        <span class="gold-rule rv rv-d1"></span>
+        <p class="rv rv-d2">A SAL OCEANO aromas nasceu de uma ideia simples e profunda: transformar a sensação de estar à beira-mar em uma experiência que pudesse acompanhar as pessoas todos os dias.</p>
+        <p class="rv rv-d2">Mais do que criar fragrâncias, a marca surgiu para traduzir memórias. O frescor da brisa pela manhã. O calor suave do sol sobre a pele. O cheiro da casa depois de um banho de mar. A textura do sal, da areia, da cerâmica e dos tecidos naturais. Tudo aquilo que faz o oceano permanecer mesmo quando estamos longe dele.</p>
+        <p class="rv rv-d3">Cada produto da SAL OCEANO é pensado como um pequeno refúgio. Velas aromáticas, difusores, águas para tecidos, peças artesanais e itens de lifestyle formam um universo inspirado no litoral brasileiro, na elegância natural da praia e no bem-estar de uma vida mais leve.</p>
+        <p class="rv rv-d3">A marca une o sensorial ao artesanal. Valoriza o toque humano, os materiais naturais, a produção em pequenas séries e os detalhes que tornam cada peça única. Nada é pensado apenas como objeto. Cada item nasce para criar atmosfera, memória e presença.</p>
+      </div>
+
+
+
+    </div>
+
+    <div class="historia-pillars">
+      <div class="historia-pillar rv">
+        <span>01</span>
+        <h4>Aromas & Sensoriais</h4>
+        <p>Fragrâncias, velas, difusores e águas para tecidos criados para transformar ambientes em refúgios de bem-estar.</p>
+      </div>
+      <div class="historia-pillar rv rv-d1">
+        <span>02</span>
+        <h4>Lifestyle</h4>
+        <p>Bolsas, acessórios, peças artesanais e objetos que traduzem a elegância natural do litoral no dia a dia.</p>
+      </div>
+      <div class="historia-pillar rv rv-d2">
+        <span>03</span>
+        <h4>Experiência & Expansão</h4>
+        <p>Loja conceito, quiosques, spa, amenities e o futuro SAL OCEANO Resort como expansão da marca para a hospitalidade.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato-sec" id="contato">
+  <div class="container">
+    <div class="ct-inner">
+      <div class="ct-text">
+        <span class="tag">Fale Conosco</span>
+        <h2>Como podemos ajudar?</h2>
+        <span class="gold-rule"></span>
+        <p>Seja para investir, parcerias, trabalhar conosco ou qualquer outro assunto: estamos aqui.</p>
+        <div class="ct-info">
+          <div class="ct-info-item"><span class="ct-info-icon">✉</span><span>contato@saloceano.com.br</span></div>
+          <div class="ct-info-item"><span class="ct-info-icon">◎</span><span>Brasil, atendimento nacional</span></div>
+          <div class="ct-info-item"><span class="ct-info-icon">◈</span><span>Parcerias, franquias e investimentos</span></div>
+        </div>
+      </div>
+      <form class="ct-form" id="ct-form" action="https://formspree.io/f/xnjkpyoq" method="POST" onsubmit="handleContact(event)">
+        <div class="form-row-2">
+          <div class="form-field">
+            <label class="form-label" for="cf-nome">Nome *</label>
+            <input class="form-input" type="text" id="cf-nome" name="nome" placeholder="Seu nome completo" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="cf-email">E-mail *</label>
+            <input class="form-input" type="email" id="cf-email" name="email" placeholder="seu@email.com" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="cf-assunto">Assunto *</label>
+          <select class="form-select" id="cf-assunto" name="assunto" required>
+            <option value="">Selecione o assunto</option>
+            <option value="investidor">Seja um investidor da SAL OCEANO</option>
+            <option value="fornecedor">Seja um fornecedor</option>
+            <option value="trabalhe">Trabalhe Conosco</option>
+            <option value="franqueado">Desejo ser um franqueado</option>
+            <option value="b2b">Desejo comprar para revenda (B2B / White Label)</option>
+            <option value="outras">Outras informações</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="cf-msg">Mensagem</label>
+          <textarea class="form-textarea" id="cf-msg" name="message" placeholder="Conte um pouco sobre o que você está buscando..."></textarea>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn-navy">Enviar mensagem</button>
+          <span class="form-note">Respondemos em até 2 dias úteis</span>
+        </div>
+        <div class="form-ok" id="cf-ok">✓ Mensagem enviada! Em breve entraremos em contato.</div>
+        <div class="form-ok" id="cf-err" style="background:rgba(150,30,30,.1);border-color:rgba(150,30,30,.25);color:#8b2020">Algo deu errado. Tente novamente ou envie para contato@saloceano.com.br</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container">
+    <h3>Histórias que chegam com a brisa</h3>
+    <p>Toda semana, um momento do mar: lançamentos, inspirações e novidades com a leveza da brisa oceânica.</p>
+    <form class="nl-form" id="nl-form" onsubmit="handleNL(event)">
+      <input type="email" class="nl-input" id="nl-email" name="email" placeholder="Seu melhor e-mail" required>
+      <button type="submit" class="nl-btn" id="nl-btn">Assinar</button>
+    </form>
+    <div class="nl-ok" id="nl-ok">Bem-vindo! Você está inserido em nossa newsletter e receberá novidades em breve.</div>
+    <div class="nl-err" id="nl-err">Algo deu errado. Tente novamente.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="ft-brand-name">SAL OCEANO</div>
+        <span class="ft-brand-sub">aromas</span>
+        <p class="ft-desc">A essência do oceano transformada em experiência. Aromas, lifestyle e hospitalidade que conectam você ao litoral.</p>
+        <div class="ft-social">
+          <a href="https://www.instagram.com/saloceanoaromas" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/55" target="_blank" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@saloceanoaromas" target="_blank" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/saloceanocompany" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a onclick="scrollToId('manifesto')">Nossa História</a></li>
+          <li><a onclick="scrollToId('sec-resort')">Projeto Resort</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>Linhas</h5>
+        <ul>
+          <li><a onclick="scrollToId('sec-aromas')">Aromas</a></li>
+          <li><a onclick="scrollToId('sec-lifestyle')">Lifestyle</a></li>
+          <li><a onclick="scrollToId('sec-feito')">Feito à Mão</a></li>
+          <li><a href="https://www.saloceanoaromas.com.br" target="_blank">Spa & Amenities</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>Atendimento</h5>
+        <ul>
+          <li><a onclick="scrollToId('contato')">Fale Conosco</a></li>
+          <li><a href="https://www.saloceanoaromas.com.br" target="_blank">Envio & Prazos</a></li>
+          <li><a href="https://www.saloceanoaromas.com.br" target="_blank">Trocas & Devoluções</a></li>
+          <li><a href="https://www.saloceanoresorts.com.br" target="_blank">Para Investidores</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">© ® 2025 SAL OCEANO aromas. Todos os direitos reservados. <span style="opacity:.5">v1.0.19</span></span>
+      <div style="display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap">
+        <a onclick="document.getElementById('priv-modal').classList.add('open')" style="font-size:.6rem;color:rgba(255,255,255,.55);cursor:pointer;transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Termos de Uso & Privacidade</a>
+        <a onclick="document.getElementById('priv-modal').classList.add('open')" style="font-size:.6rem;color:rgba(255,255,255,.55);cursor:pointer;transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Política de Cookies</a>
+        <span class="ft-copy" style="opacity:.65">Uma empresa do Grupo Verdemar Tech</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button class="back-top" id="back-top" onclick="backToTop()" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- MODAL POLÍTICA DE PRIVACIDADE -->
+<div class="priv-overlay" id="priv-modal">
+  <div class="priv-box">
+    <div class="priv-head">
+      <h2>Termos de Uso e Política de Privacidade</h2>
+      <p>SAL OCEANO aromas. Última atualização: 2025</p>
+      <button class="priv-close" onclick="document.getElementById('priv-modal').classList.remove('open')">✕</button>
+    </div>
+    <div class="priv-body">
+      <div class="priv-meta">A sua privacidade é muito importante para nós. A SAL OCEANO aromas valoriza a transparência, a segurança e o respeito aos seus clientes, visitantes e usuários.</div>
+
+      <h3>1. Termos de Uso</h3>
+      <h4>1.1. Sobre a SAL OCEANO aromas</h4>
+      <p>A SAL OCEANO aromas é uma marca brasileira criada para desenvolver experiências sensoriais inspiradas no oceano, no bem-estar, no lifestyle resort e na atmosfera de uma casa à beira-mar. Nossos produtos podem incluir, entre outros, velas aromáticas, difusores, águas perfumadas, sabonetes, cosméticos, itens de spa, moda praia, acessórios e produtos de lifestyle.</p>
+      <p>E-mail de contato: contato@saloceano.com.br</p>
+
+      <h4>1.2. Uso do site</h4>
+      <p>O usuário compromete-se a utilizar este site de forma adequada, ética e em conformidade com a legislação vigente. É proibido:</p>
+      <ul>
+        <li>Utilizar o site para fins ilícitos, fraudulentos ou não autorizados;</li>
+        <li>Reproduzir, copiar, modificar, vender ou distribuir qualquer conteúdo da SAL OCEANO sem autorização prévia;</li>
+        <li>Inserir informações falsas, incorretas ou de terceiros sem autorização.</li>
+      </ul>
+
+      <h4>1.3. Propriedade intelectual</h4>
+      <p>Todo o conteúdo presente neste site (marca, logotipo, textos, imagens, fotografias, vídeos, nomes de produtos, identidade visual e demais elementos) pertence à SAL OCEANO ou é utilizado mediante autorização. O uso indevido poderá gerar responsabilização conforme a legislação aplicável.</p>
+
+      <h4>1.4. Limitação de responsabilidade</h4>
+      <p>A SAL OCEANO adota esforços razoáveis para manter o site disponível e atualizado, mas não garante ausência de falhas ou interrupções técnicas. A SAL OCEANO não será responsável por danos decorrentes de uso inadequado do site ou de serviços de terceiros.</p>
+
+      <h3>2. Política de Privacidade</h3>
+      <h4>2.1. Dados que podemos coletar</h4>
+      <ul>
+        <li>Nome completo, e-mail, telefone/WhatsApp;</li>
+        <li>Dados de cadastro em formulários, newsletters e campanhas;</li>
+        <li>Dados de navegação (IP, dispositivo, páginas acessadas);</li>
+        <li>Dados coletados por cookies e tecnologias semelhantes.</li>
+      </ul>
+
+      <h4>2.2. Finalidades do tratamento</h4>
+      <ul>
+        <li>Responder dúvidas, solicitações e atendimentos;</li>
+        <li>Enviar novidades, campanhas e conteúdos, quando autorizado;</li>
+        <li>Melhorar o site e a experiência da marca;</li>
+        <li>Cumprir obrigações legais e regulatórias.</li>
+      </ul>
+
+      <h4>2.3. Compartilhamento de dados</h4>
+      <p>A SAL OCEANO poderá compartilhar dados apenas quando necessário, com plataformas de e-commerce, meios de pagamento, transportadoras, ferramentas de marketing e autoridades quando exigido por lei. <strong>A SAL OCEANO não vende dados pessoais.</strong></p>
+
+      <h4>2.4. Seus direitos (LGPD)</h4>
+      <p>Você tem direito a acessar, corrigir, excluir seus dados ou solicitar portabilidade. Entre em contato pelo e-mail contato@saloceano.com.br para exercer seus direitos.</p>
+
+      <h3>3. Política de Cookies</h3>
+      <h4>3.1. Tipos de cookies utilizados</h4>
+      <ul>
+        <li><strong>Necessários:</strong> essenciais para o funcionamento do site;</li>
+        <li><strong>Funcionais:</strong> lembram preferências do usuário;</li>
+        <li><strong>Desempenho e análise:</strong> ajudam a entender como o site é utilizado;</li>
+        <li><strong>Marketing e publicidade:</strong> usados para campanhas e remarketing, quando autorizado;</li>
+        <li><strong>Terceiros:</strong> ferramentas como Google Analytics, Meta Pixel e WhatsApp.</li>
+      </ul>
+      <p>Você pode gerenciar ou bloquear cookies nas configurações do seu navegador. Ao desativar determinados cookies, algumas funcionalidades podem não funcionar corretamente.</p>
+
+      <h3>4. Contato</h3>
+      <p>Dúvidas sobre privacidade, cookies ou dados pessoais:<br>
+      <strong>E-mail:</strong> contato@saloceano.com.br<br>
+      <strong>Responsável:</strong> Equipe SAL OCEANO aromas</p>
+
+      <h3>5. Atualizações</h3>
+      <p>Este documento pode ser atualizado a qualquer momento. Recomendamos consulta periódica. Ao continuar utilizando o site após alterações, você declara estar ciente da versão atualizada.</p>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-bar" id="cookie-bar">
+  <p>A sua privacidade é muito importante para nós. Usamos cookies para garantir a melhor experiência, analisar visitas e, quando autorizado, personalizar conteúdos e anúncios. <a onclick="document.getElementById('priv-modal').classList.add('open')">Saiba mais</a>.</p>
+  <div class="cookie-btns">
+    <button class="cb-btn cb-reject" onclick="closeCookies(false)">Rejeitar não essenciais</button>
+    <button class="cb-btn cb-accept" onclick="closeCookies(true)">Aceitar todos</button>
+  </div>
+</div>
+
+<!-- LIGHTBOX QUIOSQUES: SLIDER -->
+<div class="lb-overlay" id="lb-quiosques">
+  <div class="lb-box">
+    <button class="lb-close" onclick="closeLb('lb-quiosques')">✕</button>
+    <div class="lb-header">
+      <span class="tag">Formato 02: Modelos de Quiosque</span>
+      <h4>SAL OCEANO aromas: Quiosques</h4>
+    </div>
+    <div class="lb-slider">
+      <div class="lb-track" id="lb-kiosque-track">
+        <img src="./imagens/kiosque-render-01.png" alt="Quiosque SAL OCEANO, Modelo 01" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+        <img src="./imagens/kiosque-render-02.png" alt="Quiosque SAL OCEANO, Modelo 02" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+        <img src="./imagens/kiosque-render-03.png" alt="Quiosque SAL OCEANO, Modelo 03" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+        <img src="./imagens/kiosque-render-04.png" alt="Quiosque SAL OCEANO, Modelo 04" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+      </div>
+      <button class="lb-arrow lb-prev" onclick="lbSlide('lb-kiosque-track','lb-kiosque-dots',-1)">‹</button>
+      <button class="lb-arrow lb-next" onclick="lbSlide('lb-kiosque-track','lb-kiosque-dots',1)">›</button>
+    </div>
+    <div class="lb-dots-row" id="lb-kiosque-dots">
+      <button class="lb-sdot act" onclick="lbGoTo('lb-kiosque-track','lb-kiosque-dots',0)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-kiosque-track','lb-kiosque-dots',1)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-kiosque-track','lb-kiosque-dots',2)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-kiosque-track','lb-kiosque-dots',3)"></button>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX PONTOS DE PRAIA -->
+<div class="lb-overlay" id="lb-emb-praia">
+  <div class="lb-box">
+    <button class="lb-close" onclick="closeLb('lb-emb-praia')">✕</button>
+    <div class="lb-header">
+      <span class="tag">Pontos de Praia</span>
+      <h4>SAL OCEANO aromas: Pontos de Praia</h4>
+    </div>
+    <div class="lb-slider">
+      <div class="lb-track" id="lb-praia-track">
+        <img src="./imagens/quiosque-luxo.png" alt="Ponto de Praia SAL OCEANO 1" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+        <img src="./imagens/quiosque-experiencia.png" alt="Ponto de Praia SAL OCEANO 2" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+        <img src="./imagens/quiosque-low-profile.png" alt="Ponto de Praia SAL OCEANO 3" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+        <img src="./imagens/qiosque-compacto.png" alt="Ponto de Praia SAL OCEANO 4" style="width:100%;max-height:80vh;object-fit:contain;display:block;background:#06111c">
+      </div>
+      <button class="lb-arrow lb-prev" onclick="lbSlide('lb-praia-track','lb-praia-dots',-1)">&#8249;</button>
+      <button class="lb-arrow lb-next" onclick="lbSlide('lb-praia-track','lb-praia-dots',1)">&#8250;</button>
+    </div>
+    <div class="lb-dots-row" id="lb-praia-dots">
+      <button class="lb-sdot act" onclick="lbGoTo('lb-praia-track','lb-praia-dots',0)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-praia-track','lb-praia-dots',1)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-praia-track','lb-praia-dots',2)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-praia-track','lb-praia-dots',3)"></button>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX LOJA: ZOOM -->
+<div class="lb-overlay" id="lb-loja">
+  <div class="lb-box">
+    <button class="lb-close" onclick="closeLb('lb-loja')">✕</button>
+    <div class="lb-header">
+      <span class="tag">Formato 01: Projeto em Desenvolvimento</span>
+      <h4>Loja Conceito SAL OCEANO</h4>
+    </div>
+    <div class="lb-slider">
+      <div class="lb-track" id="lb-loja-track">
+        <img src="./imagens/loja-conceito-01.png" alt="Loja Conceito SAL OCEANO, Fachada" class="lb-zoom-img">
+        <img src="./imagens/loja-conceito-02.png" alt="Loja Conceito SAL OCEANO, Vista 2" class="lb-zoom-img">
+        <img src="./imagens/loja-interior.jpeg" alt="Interior SAL OCEANO" class="lb-zoom-img">
+      </div>
+      <button class="lb-arrow lb-prev" onclick="lbSlide('lb-loja-track','lb-loja-dots',-1)">‹</button>
+      <button class="lb-arrow lb-next" onclick="lbSlide('lb-loja-track','lb-loja-dots',1)">›</button>
+    </div>
+    <div class="lb-dots-row" id="lb-loja-dots">
+      <button class="lb-sdot act" onclick="lbGoTo('lb-loja-track','lb-loja-dots',0)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-loja-track','lb-loja-dots',1)"></button>
+      <button class="lb-sdot" onclick="lbGoTo('lb-loja-track','lb-loja-dots',2)"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══ HERO CAROUSEL ══
+const SLIDES=[
+  {url:'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=85',lbl:'I'},
+  {url:'https://images.unsplash.com/photo-1714168760392-ad3a38e15cac?w=1600&q=85',lbl:'II'},
+  {url:'https://images.unsplash.com/photo-1581642623417-c42eb8dc1694?w=1600&q=85',lbl:'III'},
+  {url:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=85',lbl:'IV'},
+  {url:'https://images.unsplash.com/photo-1759534026727-8db837a6a595?w=1600&q=85',lbl:'V'},
+  {url:'https://images.unsplash.com/photo-1664608678430-107c1cb79f6d?w=1600&q=85',lbl:'VI'},
+  {url:'https://images.unsplash.com/photo-1698510352419-0d1eb48ff224?w=1600&q=85',lbl:'VII'},
+];
+const slidesEl=document.getElementById('hero-slides');
+const dotsEl=document.getElementById('hero-dots');
+let cur=0;
+SLIDES.forEach((s,i)=>{
+  const d=document.createElement('div');
+  d.className='hero-slide'+(i===0?' active':'');
+  d.style.backgroundImage=`url('${s.url}')`;
+  slidesEl.appendChild(d);
+  const dot=document.createElement('button');
+  dot.className='hero-dot'+(i===0?' act':'');
+  dot.addEventListener('click',()=>goTo(i));
+  dotsEl.appendChild(dot);
+});
+function goTo(i){
+  slidesEl.querySelectorAll('.hero-slide')[cur].classList.remove('active');
+  dotsEl.querySelectorAll('.hero-dot')[cur].classList.remove('act');
+  cur=i;
+  slidesEl.querySelectorAll('.hero-slide')[cur].classList.add('active');
+  dotsEl.querySelectorAll('.hero-dot')[cur].classList.add('act');
+}
+setInterval(()=>goTo((cur+1)%SLIDES.length),5000);
+
+// ══ NAV ══
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('solid',scrollY>50);
+  updateNavActive();
+},{passive:true});
+
+// ══ NAV ACTIVE ══
+const SECS=['sec-aromas','sec-quiz','sec-lifestyle','sec-feito','sec-embreve','sec-resort','sec-simbolo','sec-historia','contato','manifesto'];
+function updateNavActive(){
+  let active=null;
+  SECS.forEach(id=>{const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<110)active=id;});
+  document.querySelectorAll('.nav-links a[data-s]').forEach(a=>a.classList.toggle('act',a.dataset.s===active));
+}
+
+// ══ SCROLL TO ══
+function scrollToId(id){
+  const el=document.getElementById(id);
+  if(el)window.scrollTo({top:el.getBoundingClientRect().top+scrollY-72,behavior:'smooth'});
+}
+
+// ══ MOBILE MENU ══
+function toggleMenu(){
+  document.getElementById('mob-menu').classList.toggle('open');
+  document.getElementById('hbg').classList.toggle('open');
+}
+
+// ══ CONTACT ══
+function goToContact(val){
+  scrollToId('contato');
+  setTimeout(()=>{
+    const sel=document.getElementById('cf-assunto');
+    if(sel&&val)sel.value=val;
+  },700);
+}
+async function handleContact(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('[type=submit]');
+  const okEl=document.getElementById('cf-ok');
+  const errEl=document.getElementById('cf-err');
+  okEl.style.display='none';errEl.style.display='none';
+  btn.textContent='Enviando...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/xnjkpyoq',{
+      method:'POST',
+      body:new FormData(e.target),
+      headers:{Accept:'application/json'}
+    });
+    if(res.ok){
+      okEl.style.display='block';
+      btn.textContent='Enviado ✓';btn.style.background='#2a6048';
+      e.target.querySelectorAll('input,select,textarea').forEach(f=>f.value='');
+    }else{
+      errEl.style.display='block';
+      btn.textContent='Enviar mensagem';btn.disabled=false;
+    }
+  }catch(err){
+    errEl.style.display='block';
+    btn.textContent='Enviar mensagem';btn.disabled=false;
+  }
+}
+
+// ══ NEWSLETTER ══
+async function handleNL(e){
+  e.preventDefault();
+  const btn=document.getElementById('nl-btn');
+  const okEl=document.getElementById('nl-ok');
+  const errEl=document.getElementById('nl-err');
+  okEl.style.display='none';errEl.style.display='none';
+  btn.textContent='Enviando...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/xjgqwere',{
+      method:'POST',
+      body:new FormData(e.target),
+      headers:{Accept:'application/json'}
+    });
+    if(res.ok){
+      okEl.style.display='block';
+      btn.textContent='Assinado ✓';btn.style.background='#2a6048';
+      document.getElementById('nl-email').value='';
+    }else{
+      errEl.style.display='block';
+      btn.textContent='Assinar';btn.disabled=false;
+    }
+  }catch(err){
+    errEl.style.display='block';
+    btn.textContent='Assinar';btn.disabled=false;
+  }
+}
+
+// ══ JORNADA DUAL CAROUSEL ══
+(function(){
+  const ids=['jm-0','jm-1','jm-2','jm-3','jm-4'];
+  ids.forEach(function(id,i){
+    var show=false;
+    setTimeout(function(){
+      setInterval(function(){
+        var el=document.getElementById(id);
+        if(!el)return;
+        show=!show;
+        el.classList.toggle('show-product',show);
+      },3800);
+    },i*650);
+  });
+})();
+
+// ══ BACK TO TOP ══
+const backTop=document.getElementById('back-top');
+window.addEventListener('scroll',()=>{backTop.classList.toggle('show',scrollY>400);},{passive:true});
+function backToTop(){
+  try{window.scrollTo({top:0,behavior:'smooth'});}
+  catch(e){document.documentElement.scrollTop=0;document.body.scrollTop=0;}
+}
+
+// ══ COOKIE BANNER ══
+function closeCookies(accepted){
+  document.getElementById('cookie-bar').classList.remove('show');
+  localStorage.setItem('so_cookies',accepted?'accepted':'rejected');
+}
+window.addEventListener('load',()=>{
+  if(!localStorage.getItem('so_cookies')){
+    setTimeout(()=>document.getElementById('cookie-bar').classList.add('show'),1200);
+  }
+});
+
+// ══ LIGHTBOX + SLIDER ══
+function closeLb(id){document.getElementById(id).classList.remove('open');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.lb-overlay.open').forEach(el=>el.classList.remove('open'));});
+document.querySelectorAll('.lb-overlay').forEach(lb=>{lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open');});});
+
+function lbSlide(trackId,dotsId,dir){
+  const track=document.getElementById(trackId);
+  const imgs=track.querySelectorAll('img');
+  const cur=parseInt(track.dataset.cur||0);
+  lbGoTo(trackId,dotsId,(cur+dir+imgs.length)%imgs.length);
+}
+function lbGoTo(trackId,dotsId,idx){
+  const track=document.getElementById(trackId);
+  track.dataset.cur=idx;
+  track.style.transform=`translateX(-${idx*100}%)`;
+  document.getElementById(dotsId).querySelectorAll('.lb-sdot').forEach((d,i)=>d.classList.toggle('act',i===idx));
+}
+
+// ══ MINI CARROSSEL QUIOSQUE ══
+(function(){
+  const track=document.getElementById('rp-kiosque-track');
+  if(!track)return;
+  let cur=0;
+  const imgs=track.querySelectorAll('img');
+  setInterval(()=>{cur=(cur+1)%imgs.length;track.style.transform=`translateX(-${cur*100}%)`;},3000);
+})();
+
+// ══ SCROLL REVEAL ══
+const rvObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');rvObs.unobserve(e.target);}});
+},{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>rvObs.observe(el));
+
+// ══ PROGRESS BAR ══
+const pb=document.getElementById('progress-bar');
+window.addEventListener('scroll',()=>{
+  const pct=(scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100;
+  pb.style.width=Math.min(pct,100)+'%';
+},{passive:true});
+
+// ══ QUIZ ══
+const QUIZ_SCORES={fresco_limpo:0,marinho:0,solar:0,verde_sereno:0,gourmand:0,profundo:0,signature:0};
+const QUIZ_SELECTIONS={};
+const QUIZ_RESULTS={
+  fresco_limpo:{aroma:'Brisa da Manha',tipo:'Difusor de Ambiente',desc:'Fresco, limpo e revigorante. Como o primeiro ar do dia a beira-mar, quando o oceano ainda esta em silencio.',img:'./imagens/difusor-brisa-manha.jpeg'},
+  marinho:{aroma:'Sal Marinho',tipo:'Difusor de Ambiente',desc:'Puro, mineral e autentico. O aroma do oceano em estado bruto, como respirar fundo a beira-mar.',img:'./imagens/difusor-sal-marinho.jpeg'},
+  solar:{aroma:'Sol do Meio-Dia',tipo:'Vela Aromatica',desc:'Quente, solar e luminoso. A sensacao do mar brilhando ao pleno sol de verao.',img:'./imagens/vela-amanhecer.jpeg'},
+  verde_sereno:{aroma:'Praia Serena',tipo:'Difusor de Ambiente',desc:'Natural, tranquilo e restaurador. A calma de uma praia pouco frequentada ao amanhecer.',img:'./imagens/difusor-sal-marinho.jpeg'},
+  gourmand:{aroma:'Coco e Areia',tipo:'Vela Aromatica',desc:'Cremoso, quente e acolhedor. Como a areia morna, o coco fresco e a brisa suave da tarde.',img:'./imagens/vela-praia-serena.jpeg'},
+  profundo:{aroma:'Luzes do Oceano',tipo:'Difusor de Ambiente',desc:'Profundo, misterioso e singular. O oceano quando o dia dorme e o mar conta suas proprias historias.',img:'./imagens/difusor-luzes-oceano.jpeg'},
+  signature:{aroma:'SAL OCEANO Assinatura',tipo:'Vela e Difusor',desc:'O equilibrio perfeito entre mar limpo, brisa citrica e conforto acolhedor. Nossa fragancia de assinatura.',img:'./imagens/difusor-brisa-manha.jpeg'},
+};
+
+function quizSelect(qNum,el,tags){
+  // Clear previous selection in this question
+  el.closest('.quiz-options').querySelectorAll('.quiz-opt').forEach(o=>o.classList.remove('selected'));
+  el.classList.add('selected');
+  QUIZ_SELECTIONS[qNum]=tags;
+  // Auto-advance after brief pause
+  setTimeout(()=>{
+    if(qNum<4)quizNext(qNum);
+    else quizFinish();
+  },420);
+}
+
+function quizNext(qNum){
+  if(!QUIZ_SELECTIONS[qNum])return;
+  // Mark step done
+  document.getElementById('qstep-'+qNum).classList.remove('active');
+  document.getElementById('qstep-'+qNum).classList.add('done');
+  // Show next step
+  const nextStep=document.getElementById('qstep-'+(qNum+1));
+  if(nextStep)nextStep.classList.add('active');
+  // Hide current question, show next
+  document.getElementById('quiz-q'+qNum).style.display='none';
+  document.getElementById('quiz-q'+(qNum+1)).style.display='block';
+}
+
+// Navigate to a previous answered question (by clicking step bubbles)
+function quizGoTo(qNum){
+  const targetStep=document.getElementById('qstep-'+qNum);
+  if(!targetStep)return;
+  if(!targetStep.classList.contains('done')&&!targetStep.classList.contains('active'))return;
+  for(let i=1;i<=4;i++){
+    const q=document.getElementById('quiz-q'+i);
+    if(q)q.style.display=(i===qNum?'block':'none');
+    const s=document.getElementById('qstep-'+i);
+    if(s){
+      s.classList.remove('active');
+      if(i<qNum)s.classList.add('done');
+      else if(i===qNum){s.classList.remove('done');s.classList.add('active');}
+      else{s.classList.remove('done');}
+    }
+  }
+  document.getElementById('quiz-result').style.display='none';
+}
+
+function quizFinish(){
+  if(!QUIZ_SELECTIONS[4])return;
+  const scores={fresco_limpo:0,marinho:0,solar:0,verde_sereno:0,gourmand:0,profundo:0,signature:0};
+  Object.values(QUIZ_SELECTIONS).forEach(tags=>{
+    tags.forEach(t=>{if(scores[t]!==undefined)scores[t]++;});
+  });
+  document.getElementById('qstep-4').classList.remove('active');
+  document.getElementById('qstep-4').classList.add('done');
+  let winner='signature';
+  let maxScore=0;
+  Object.entries(scores).forEach(([k,v])=>{if(v>maxScore){maxScore=v;winner=k;}});
+  const r=QUIZ_RESULTS[winner];
+  document.getElementById('quiz-q4').style.display='none';
+  const res=document.getElementById('quiz-result');
+  document.getElementById('qr-tipo').textContent=r.tipo;
+  document.getElementById('qr-nome').textContent=r.aroma;
+  document.getElementById('qr-desc').textContent=r.desc;
+  const img=document.getElementById('qr-img');
+  img.src=r.img;img.alt=r.aroma;
+  res.style.display='block';
+}
+
+function quizReset(){
+  Object.keys(QUIZ_SELECTIONS).forEach(k=>delete QUIZ_SELECTIONS[k]);
+  for(let i=1;i<=4;i++){
+    const s=document.getElementById('qstep-'+i);
+    s.classList.remove('done','active');
+    if(i===1)s.classList.add('active');
+    const q=document.getElementById('quiz-q'+i);
+    q.style.display=(i===1?'block':'none');
+    q.querySelectorAll('.quiz-opt').forEach(o=>o.classList.remove('selected'));
+  }
+  document.getElementById('quiz-result').style.display='none';
+}
+
+// ══ EM BREVE CAROUSELS ══
+(function(){
+  ['emb-track-1','emb-track-2'].forEach(id=>{
+    const track=document.getElementById(id);
+    if(!track)return;
+    let cur=0;
+  const slides=track.children.length;
+    setInterval(()=>{
+      cur=(cur+1)%slides;
+      track.style.transform=`translateX(-${cur*100}%)`;
+    },3200);
+  });
+})();
+
+// ══ JORNADA DUAL CAROUSEL ══
+(function(){
+  const ids=['jm-0','jm-1','jm-2','jm-3','jm-4'];
+  ids.forEach(function(id,i){
+    var show=false;
+    setTimeout(function(){
+      setInterval(function(){
+        var el=document.getElementById(id);
+        if(!el)return;
+        show=!show;
+        el.classList.toggle('show-product',show);
+      },3800);
+    },i*650);
+  });
+})();
+
+function backToTop(){
+  try{window.scrollTo({top:0,behavior:'smooth'});}
+  catch(e){document.documentElement.scrollTop=0;document.body.scrollTop=0;}
+}
+</script>
+</body>
+</html
+op=0;}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Deploy ZIP (não precisa versionar)
+*.zip
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
